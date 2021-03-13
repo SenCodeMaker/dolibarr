@@ -23,7 +23,7 @@
  */
 
 require '../../../main.inc.php';
-require_once DOL_DOCUMENT_ROOT.'/includes/OAuth/bootstrap.php';
+require_once DOL_DOCUMENT_ROOT.'/include/OAuth/bootstrap.php';
 use OAuth\Common\Storage\DoliStorage;
 use OAuth\Common\Consumer\Credentials;
 use OAuth\OAuth2\Service\Google;

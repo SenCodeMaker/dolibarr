@@ -152,7 +152,7 @@ function isASecretKey($keyname)
  */
 function getBrowserInfo($user_agent)
 {
-	include_once DOL_DOCUMENT_ROOT.'/includes/mobiledetect/mobiledetectlib/Mobile_Detect.php';
+	include_once DOL_DOCUMENT_ROOT.'/include/mobiledetect/mobiledetectlib/Mobile_Detect.php';
 
 	$name = 'unknown';
 	$version = '';
@@ -2080,7 +2080,7 @@ function dol_format_address($object, $withcountry = 0, $sep = "\n", $outputlangs
  *	Format a string.
  *
  *	@param	string	$fmt		Format of strftime function (http://php.net/manual/fr/function.strftime.php)
- *  @param	int		$ts			Timesamp (If is_gmt is true, timestamp is already includes timezone and daylight saving offset, if is_gmt is false, timestamp is a GMT timestamp and we must compensate with server PHP TZ)
+ *  @param	int		$ts			Timesamp (If is_gmt is true, timestamp is already include timezone and daylight saving offset, if is_gmt is false, timestamp is a GMT timestamp and we must compensate with server PHP TZ)
  *  @param	int		$is_gmt		See comment of timestamp parameter
  *	@return	string				A formatted string
  */
@@ -6622,7 +6622,7 @@ function dol_concatdesc($text1, $text2, $forxml = false, $invert = false)
 
 
 /**
- * Return array of possible common substitutions. This includes several families like: 'system', 'mycompany', 'object', 'objectamount', 'date', 'user'
+ * Return array of possible common substitutions. This include several families like: 'system', 'mycompany', 'object', 'objectamount', 'date', 'user'
  *
  * @param	Translate	$outputlangs	Output language
  * @param   int         $onlykey        1=Do not calculate some heavy values of keys (performance enhancement when we need only the keys), 2=Values are trunc and html sanitized (to use for help tooltip)

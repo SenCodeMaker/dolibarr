@@ -74,11 +74,11 @@ $companystatic = new Societe($db);
 $contactstatic = new Contact($db);
 $task = new Task($db);
 
-$arrayofcss = array('/includes/jsgantt/jsgantt.css');
+$arrayofcss = array('/include/jsgantt/jsgantt.css');
 
 if (!empty($conf->use_javascript_ajax)) {
 	$arrayofjs = array(
-	'/includes/jsgantt/jsgantt.js',
+	'/include/jsgantt/jsgantt.js',
 	'/projet/jsgantt_language.js.php?lang='.$langs->defaultlang
 	);
 }
