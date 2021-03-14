@@ -11,4 +11,4 @@ fixers:
 
 files:
     ignore:
-        - 'htdocs/includes/*'
+        - 'htdocs/inclusions/*'

@@ -18,7 +18,7 @@ filter:
         - dev/*
         - doc/*
         - documents/*
-        - htdocs/includes/*
+        - htdocs/inclusions/*
         - node_modules/*
         - test/*
     paths: 
@@ -32,14 +32,14 @@ tools:
         extensions:
             - php
         dependency_paths: 
-            - htdocs/includes/
+            - htdocs/inclusions/
         filter:
             excluded_paths:
                 - build/*
                 - dev/*
                 - doc/*
                 - test/*
-                - htdocs/includes/*
+                - htdocs/inclusions/*
                 - htdocs/core/class/lessc.class.php
             paths:
                 - htdocs/
@@ -164,7 +164,7 @@ tools:
                 - 'dev/*'
                 - 'doc/*'
                 - 'test/*'
-                - 'htdocs/includes/*'
+                - 'htdocs/inclusions/*'
             paths: {  }
 
     # change tracking
@@ -181,7 +181,7 @@ tools:
                 - 'dev/*'
                 - 'doc/*'
                 - 'test/*'
-                - 'htdocs/includes/*'
+                - 'htdocs/inclusions/*'
             paths: {  }
 
     # Similar code detection
@@ -194,7 +194,7 @@ tools:
                 - 'dev/*'
                 - 'doc/*'
                 - 'test/*'
-                - 'htdocs/includes/*'
+                - 'htdocs/inclusions/*'
             paths: {  }
             
     # Coding-Style / Bug Detection
@@ -209,7 +209,7 @@ tools:
                 - 'dev/*'
                 - 'doc/*'
                 - 'test/*'
-                - 'htdocs/includes/*'
+                - 'htdocs/inclusions/*'
             paths: {  }
         config: {  }
         path_configs: {  }

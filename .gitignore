@@ -26,21 +26,21 @@ doxygen_warnings.log
 # Vagrant generated files
 .vagrant
 # Composer installed repositories
-/htdocs/includes/**/.git
+/htdocs/include/**/.git
 # Composer autoloader and unwanted files
 composer.phar
-htdocs/includes/autoload.php
-htdocs/includes/bin/
-htdocs/includes/composer/
-htdocs/includes/doctrine/
-htdocs/includes/jakub-onderka/
-htdocs/includes/phpdocumentor/
-htdocs/includes/phpspec/
-htdocs/includes/phpunit/
-htdocs/includes/php-parallel-lint/
-htdocs/includes/sebastian/
-htdocs/includes/squizlabs/
-htdocs/includes/webmozart/
+htdocs/include/autoload.php
+htdocs/include/bin/
+htdocs/include/composer/
+htdocs/include/doctrine/
+htdocs/include/jakub-onderka/
+htdocs/include/phpdocumentor/
+htdocs/include/phpspec/
+htdocs/include/phpunit/
+htdocs/include/php-parallel-lint/
+htdocs/include/sebastian/
+htdocs/include/squizlabs/
+htdocs/include/webmozart/
 htdocs/.well-known/apple-developer-merchantid-domain-association
 
 # Node Modules

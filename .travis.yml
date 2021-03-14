@@ -81,8 +81,8 @@ install:
   composer -V
   composer self-update
   composer -n init
-  composer -n config vendor-dir htdocs/includes
-  composer -n config -g vendor-dir htdocs/includes
+  composer -n config vendor-dir htdocs/include
+  composer -n config -g vendor-dir htdocs/include
   echo
 
 - |
@@ -116,10 +116,10 @@ install:
 
 - |
   echo "Adding path of binaries tools installed by composer to the PATH"
-  export PATH="$TRAVIS_BUILD_DIR/htdocs/includes/bin:$PATH"
+  export PATH="$TRAVIS_BUILD_DIR/htdocs/include/bin:$PATH"
   echo $PATH
   ls $TRAVIS_BUILD_DIR/vendor
-  ls $TRAVIS_BUILD_DIR/htdocs/includes/bin
+  ls $TRAVIS_BUILD_DIR/htdocs/include/bin
   echo
 
 
@@ -267,12 +267,12 @@ script:
   echo "Checking PHP syntax errors"
   # Ensure we catch errors
   set -e
-  #parallel-lint --exclude htdocs/includes --blame .
-  parallel-lint --exclude dev/tools/test/namespacemig --exclude htdocs/includes/composer --exclude htdocs/includes/myclabs --exclude htdocs/includes/phpspec --exclude dev/initdata/dbf/includes \
-  	--exclude htdocs/includes/sabre --exclude htdocs/includes/phpoffice/PhpSpreadsheet --exclude htdocs/includes/sebastian \
-  	--exclude htdocs/includes/squizlabs/php_codesniffer --exclude htdocs/includes/jakub-onderka --exclude htdocs/includes/php-parallel-lint --exclude htdocs/includes/symfony \
-  	--exclude htdocs/includes/mike42/escpos-php/example --exclude htdocs/includes/maximebf \
-  	--exclude htdocs/includes/phpunit/ --exclude htdocs/includes/tecnickcom/tcpdf/include/barcodes --exclude htdocs/includes/webmozart --blame .
+  #parallel-lint --exclude htdocs/include --blame .
+  parallel-lint --exclude dev/tools/test/namespacemig --exclude htdocs/include/composer --exclude htdocs/include/myclabs --exclude htdocs/include/phpspec --exclude dev/initdata/dbf/include \
+  	--exclude htdocs/include/sabre --exclude htdocs/include/phpoffice/PhpSpreadsheet --exclude htdocs/include/sebastian \
+  	--exclude htdocs/include/squizlabs/php_codesniffer --exclude htdocs/include/jakub-onderka --exclude htdocs/include/php-parallel-lint --exclude htdocs/include/symfony \
+  	--exclude htdocs/include/mike42/escpos-php/example --exclude htdocs/include/maximebf \
+  	--exclude htdocs/include/phpunit/ --exclude htdocs/include/tecnickcom/tcpdf/include/barcodes --exclude htdocs/include/webmozart --blame .
   set +e
   echo
 
