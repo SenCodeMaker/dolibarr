@@ -58,7 +58,7 @@ $db_prefix = GETPOST('db_prefix', 'aZ09') ?GETPOST('db_prefix', 'aZ09') : (empty
 $db_create_database = GETPOST('db_create_database', 'alpha') ?GETPOST('db_create_database', 'alpha') : (empty($argv[15]) ? '' : $argv[15]);
 $db_create_user = GETPOST('db_create_user', 'alpha') ?GETPOST('db_create_user', 'alpha') : (empty($argv[16]) ? '' : $argv[16]);
 error_log($db_type);
-error_lo($db_host);
+error_log($db_host);
 error_log($db_port);
 error_log($db_name);
 error_log('-----------------------\n');
