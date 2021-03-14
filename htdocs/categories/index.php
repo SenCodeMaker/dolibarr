@@ -70,8 +70,8 @@ if ($type == Categorie::TYPE_ACCOUNT) {
 	$title = $langs->trans(ucfirst($type).'sCategoriesArea');
 }
 
-$arrayofjs = array('/includes/jquery/plugins/jquerytreeview/jquery.treeview.js', '/includes/jquery/plugins/jquerytreeview/lib/jquery.cookie.js');
-$arrayofcss = array('/includes/jquery/plugins/jquerytreeview/jquery.treeview.css');
+$arrayofjs = array('/inclusions/jquery/plugins/jquerytreeview/jquery.treeview.js', '/inclusions/jquery/plugins/jquerytreeview/lib/jquery.cookie.js');
+$arrayofcss = array('/inclusions/jquery/plugins/jquerytreeview/jquery.treeview.css');
 
 llxHeader('', $title, '', '', 0, 0, $arrayofjs, $arrayofcss);
 
@@ -150,7 +150,7 @@ $cate_arbo = $categstatic->get_full_arbo($typetext);
 // Define fulltree array
 $fulltree = $cate_arbo;
 
-// Load possible missing includes
+// Load possible missing include
 if ($conf->global->CATEGORY_SHOW_COUNTS) {
 	if ($type == Categorie::TYPE_MEMBER) {
 		require_once DOL_DOCUMENT_ROOT.'/adherents/class/adherent.class.php';

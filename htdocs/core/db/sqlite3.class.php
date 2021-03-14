@@ -735,7 +735,7 @@ class DoliDBSqlite3 extends DoliDB
 
 	/**
 	 *  Encrypt sensitive data in database
-	 *  Warning: This function includes the escape, so it must use direct value
+	 *  Warning: This function include the escape, so it must use direct value
 	 *
 	 *  @param  string  $fieldorvalue   Field name or value to encrypt
 	 *  @param	int		$withQuotes     Return string with quotes

@@ -135,7 +135,7 @@ $usercanapprovesecond = $user->rights->fournisseur->commande->approve2;
 $usercanorder = $user->rights->fournisseur->commande->commander;
 $usercanreceived		= $user->rights->fournisseur->commande->receptionner;
 
-// Permissions for includes
+// Permissions for include
 $permissionnote			= $usercancreate; // Used by the include of actions_setnotes.inc.php
 $permissiondellink = $usercancreate; // Used by the include of actions_dellink.inc.php
 $permissiontoedit = $usercancreate; // Used by the include of actions_lineupdown.inc.php

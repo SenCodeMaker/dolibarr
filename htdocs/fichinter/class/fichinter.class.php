@@ -753,7 +753,7 @@ class Fichinter extends CommonObject
 	/**
 	 *	Return clicable name (with picto eventually)
 	 *
-	 *	@param		int		$withpicto					0=_No picto, 1=Includes the picto in the linkn, 2=Picto only
+	 *	@param		int		$withpicto					0=_No picto, 1=include the picto in the linkn, 2=Picto only
 	 *	@param		string	$option						Options
 	 *  @param	    int   	$notooltip					1=Disable tooltip
 	 *  @param      int     $save_lastsearch_value		-1=Auto, 0=No save of lastsearch_values when clicking, 1=Save lastsearch_values whenclicking

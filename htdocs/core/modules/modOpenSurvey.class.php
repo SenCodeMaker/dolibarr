@@ -89,7 +89,7 @@ class modOpenSurvey extends DolibarrModules
 		$this->boxes = array(); // List of boxes
 		$r = 0;
 
-		// Add here list of php file(s) stored in includes/boxes that contains class to show a box.
+		// Add here list of php file(s) stored in include/boxes that contains class to show a box.
 		// Example:
 		//$this->boxes[$r][1] = "myboxa.php";
 		//$r++;

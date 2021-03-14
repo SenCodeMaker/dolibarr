@@ -665,10 +665,10 @@ llxHeader(
 	0,
 	0,
 	array(
-		'/includes/ace/src/ace.js',
-		'/includes/ace/src/ext-statusbar.js',
-		'/includes/ace/src/ext-language_tools.js',
-		//'/includes/ace/src/ext-chromevox.js'
+		'/inclusions/ace/src/ace.js',
+		'/inclusions/ace/src/ext-statusbar.js',
+		'/inclusions/ace/src/ext-language_tools.js',
+		//'/inclusions/ace/src/ext-chromevox.js'
 	),
 	array()
 );

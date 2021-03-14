@@ -907,7 +907,7 @@ class Lessc
 				}
 				return $num.$unit;
 			case 'string':
-				// [1] - contents of string (includes quotes)
+				// [1] - contents of string (include quotes)
 				list(, $delim, $content) = $value;
 				foreach ($content as &$part) {
 					if (is_array($part)) {

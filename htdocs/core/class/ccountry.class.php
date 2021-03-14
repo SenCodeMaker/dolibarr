@@ -21,7 +21,7 @@
  *      \brief      This file is a CRUD class file (Create/Read/Update/Delete) for c_country dictionary
  */
 
-// Put here all includes required by your class file
+// Put here all include required by your class file
 //require_once DOL_DOCUMENT_ROOT.'/core/class/commonobject.class.php';
 //require_once DOL_DOCUMENT_ROOT.'/societe/class/societe.class.php';
 //require_once DOL_DOCUMENT_ROOT.'/product/class/product.class.php';

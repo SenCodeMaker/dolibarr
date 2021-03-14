@@ -180,7 +180,7 @@ print $message;
 
 print '<br><br><br>';
 
-require_once DOL_DOCUMENT_ROOT.'/includes/sabre/autoload.php';
+require_once DOL_DOCUMENT_ROOT.'/include/sabre/autoload.php';
 $version = Sabre\DAV\Version::VERSION;
 print '<span class="opacitymedium">'.$langs->trans("BaseOnSabeDavVersion").' : '.$version.'</span>';
 

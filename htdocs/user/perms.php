@@ -311,7 +311,7 @@ if ($result) {
 	while ($i < $num) {
 		$obj = $db->fetch_object($result);
 
-		// If line is for a module that doe snot existe anymore (absent of includes/module), we ignore it
+		// If line is for a module that doe snot existe anymore (absent of inclusions/module), we ignore it
 		if (empty($modules[$obj->module])) {
 			$i++;
 			continue;

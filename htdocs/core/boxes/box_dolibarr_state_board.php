@@ -160,7 +160,7 @@ class box_dolibarr_state_board extends ModeleBoxes
 				'holidays' => 'Holiday',
 				'ticket' => 'Ticket',
 			);
-			$includes = array(
+			$include = array(
 				'users' => DOL_DOCUMENT_ROOT . "/user/class/user.class.php",
 				'members' => DOL_DOCUMENT_ROOT . "/adherents/class/adherent.class.php",
 				'customers' => DOL_DOCUMENT_ROOT . "/societe/class/client.class.php",
@@ -254,7 +254,7 @@ class box_dolibarr_state_board extends ModeleBoxes
 					}
 
 					if (!isset($boardloaded[$classkeyforcache]) || !is_object($boardloaded[$classkeyforcache])) {
-						include_once $includes[$val]; // Loading a class cost around 1Mb
+						include_once $include[$val]; // Loading a class cost around 1Mb
 
 						$board = new $class($this->db);
 						$board->load_state_board();

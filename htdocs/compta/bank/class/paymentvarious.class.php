@@ -22,7 +22,7 @@
  *  \brief		Class for various payment
  */
 
-// Put here all includes required by your class file
+// Put here all include required by your class file
 require_once DOL_DOCUMENT_ROOT.'/core/class/commonobject.class.php';
 
 

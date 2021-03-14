@@ -97,9 +97,9 @@ function tree_showpad(&$fulltree, $key, $silent = 0)
  *  Recursive function to output a tree. <ul id="iddivjstree"><li>...</li></ul>
  *  It is also used for the tree of categories.
  *  Note: To have this function working, check you have loaded the js and css for treeview.
- *  $arrayofjs=array('/includes/jquery/plugins/jquerytreeview/jquery.treeview.js',
- *                   '/includes/jquery/plugins/jquerytreeview/lib/jquery.cookie.js');
- *	$arrayofcss=array('/includes/jquery/plugins/jquerytreeview/jquery.treeview.css');
+ *  $arrayofjs=array('/inclusions/jquery/plugins/jquerytreeview/jquery.treeview.js',
+ *                   '/inclusions/jquery/plugins/jquerytreeview/lib/jquery.cookie.js');
+ *	$arrayofcss=array('/inclusions/jquery/plugins/jquerytreeview/jquery.treeview.css');
  *  TODO Replace with jstree plugin instead of treeview plugin.
  *
  *  @param	array	$tab    					Array of all elements

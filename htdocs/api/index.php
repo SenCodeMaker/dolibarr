@@ -63,7 +63,7 @@ if (!$res) {
 	die("Include of main fails");
 }
 
-require_once DOL_DOCUMENT_ROOT.'/includes/restler/framework/Luracast/Restler/AutoLoader.php';
+require_once DOL_DOCUMENT_ROOT.'/inclusions/restler/framework/Luracast/Restler/AutoLoader.php';
 
 call_user_func(function () {
 	$loader = Luracast\Restler\AutoLoader::instance();

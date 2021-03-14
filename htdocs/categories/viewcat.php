@@ -205,8 +205,8 @@ if ($elemid && $action == 'addintocategory' &&
 $form = new Form($db);
 $formother = new FormOther($db);
 
-$arrayofjs = array('/includes/jquery/plugins/jquerytreeview/jquery.treeview.js', '/includes/jquery/plugins/jquerytreeview/lib/jquery.cookie.js');
-$arrayofcss = array('/includes/jquery/plugins/jquerytreeview/jquery.treeview.css');
+$arrayofjs = array('/inclusions/jquery/plugins/jquerytreeview/jquery.treeview.js', '/inclusions/jquery/plugins/jquerytreeview/lib/jquery.cookie.js');
+$arrayofcss = array('/inclusions/jquery/plugins/jquerytreeview/jquery.treeview.css');
 $helpurl = '';
 llxHeader("", $langs->trans("Categories"), $helpurl, '', 0, 0, $arrayofjs, $arrayofcss);
 
@@ -343,7 +343,7 @@ if ($cats < 0) {
 
 	$fulltree = $categstatic->get_full_arbo($type, $object->id, 1);
 
-	// Load possible missing includes
+	// Load possible missing include
 	if ($conf->global->CATEGORY_SHOW_COUNTS) {
 		if ($type == Categorie::TYPE_MEMBER) {
 			require_once DOL_DOCUMENT_ROOT.'/adherents/class/adherent.class.php';

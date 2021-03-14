@@ -1954,7 +1954,7 @@ class ExtraFields
 	 *
 	 * @param   string	$key            Key of attribute
 	 * @param	string	$object			Object
-	 * @param	int		$colspan		Value of colspan to use (it must includes the first column with title)
+	 * @param	int		$colspan		Value of colspan to use (it must include the first column with title)
 	 * @param	string	$display_type	"card" for form display, "line" for document line display (extrafields on propal line, order line, etc...)
 	 * @return 	string					HTML code with line for separator
 	 */

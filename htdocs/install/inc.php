@@ -40,7 +40,7 @@ if (!defined('DOL_DOCUMENT_ROOT')) {
 	define('DOL_DOCUMENT_ROOT', '..');
 }
 if (!defined('ADODB_PATH')) {
-	$foundpath = DOL_DOCUMENT_ROOT.'/includes/adodbtime/';
+	$foundpath = DOL_DOCUMENT_ROOT.'/inclusions/adodbtime/';
 	if (!is_dir($foundpath)) {
 		$foundpath = '/usr/share/php/adodb/';
 	}
@@ -428,23 +428,23 @@ function pHeader($subtitle, $next, $action = 'set', $param = '', $forcejqueryurl
 	print '<meta name="generator" content="Dolibarr installer">'."\n";
 	print '<link rel="stylesheet" type="text/css" href="default.css">'."\n";
 
-	print '<!-- Includes CSS for JQuery -->'."\n";
+	print '<!-- include CSS for JQuery -->'."\n";
 	if ($jQueryUiCustomPath) {
 		print '<link rel="stylesheet" type="text/css" href="'.$jQueryUiCustomPath.'css/'.$jquerytheme.'/jquery-ui.min.css" />'."\n"; // JQuery
 	} else {
-		print '<link rel="stylesheet" type="text/css" href="../includes/jquery/css/'.$jquerytheme.'/jquery-ui.min.css" />'."\n"; // JQuery
+		print '<link rel="stylesheet" type="text/css" href="../inclusions/jquery/css/'.$jquerytheme.'/jquery-ui.min.css" />'."\n"; // JQuery
 	}
 
-	print '<!-- Includes JS for JQuery -->'."\n";
+	print '<!-- include JS for JQuery -->'."\n";
 	if ($jQueryCustomPath) {
 		print '<script type="text/javascript" src="'.$jQueryCustomPath.'jquery.min.js"></script>'."\n";
 	} else {
-		print '<script type="text/javascript" src="../includes/jquery/js/jquery.min.js"></script>'."\n";
+		print '<script type="text/javascript" src="../inclusions/jquery/js/jquery.min.js"></script>'."\n";
 	}
 	if ($jQueryUiCustomPath) {
 		print '<script type="text/javascript" src="'.$jQueryUiCustomPath.'jquery-ui.min.js"></script>'."\n";
 	} else {
-		print '<script type="text/javascript" src="../includes/jquery/js/jquery-ui.min.js"></script>'."\n";
+		print '<script type="text/javascript" src="../inclusions/jquery/js/jquery-ui.min.js"></script>'."\n";
 	}
 
 	print '<title>'.$langs->trans("DolibarrSetup").'</title>'."\n";

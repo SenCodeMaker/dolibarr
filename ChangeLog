@@ -325,7 +325,7 @@ Following changes may create regressions for some external modules, but were nec
 * Depreciate all methods with name ->valide(). Use instead methods ->validate().
 * Function showStripePaymentUrl, getStripePaymentUrl, showPaypalPaymentUrl and getPaypalPaymentUrl has been removed. The generic one showOnlinePaymentUrl and getOnlinePaymentUrl are always used.
 * Context for hook showSocinfoOnPrint has been moved from "showsocinfoonprint" to "main"
-* Library htdocs/includes/phpoffice/phpexcel as been removed (replaced with htdocs/includes/phpoffice/PhpSpreadsheet)
+* Library htdocs/include/phpoffice/phpexcel as been removed (replaced with htdocs/include/phpoffice/PhpSpreadsheet)
 * Database transaction in your triggers must be correctly balanced (one close for one open). If not, an error will be returned by the trigger, even if trigger did return error code.
 * Dolibarr v13 is still compatible with any PHP version between 5.6.0 and 7.4.*; Unit tests are OK with PHP 8.0 but some warnings or troubles may appears with PHP 8.0.
 * All your Ajax services must contains such a line at begin of file:  if (!defined('NOTOKENRENEWAL')) define('NOTOKENRENEWAL', '1'); // Disables token renewal
@@ -1576,7 +1576,7 @@ FIX: wrong test
 FIX: XSS
 FIX: Payment from POS ware not recorded.
 FIX: Can validate invoice with amount including tax of zero for the case of having a final invoice with
-     VAT that includes a deposit without vat.
+     VAT that include a deposit without vat.
 
 ***** ChangeLog for 10.0.2 compared to 10.0.1 *****
 FIX: #10460 compatibility with MariaDB 10.4
@@ -4102,7 +4102,7 @@ NEW: Support free bottom text and watermark on expense report template.
 NEW: Support mass actions for proposals
 NEW: Table with list of lots/serial can be viewed (module product batch).
 NEW: The autofill zip/town table option is on by default.
-NEW: the count of linked files on card includes external links.
+NEW: the count of linked files on card include external links.
 NEW: Usage of vat code seems ok everywhere.
 NEW: User date of employment added.
 NEW: Use small photo of user on all user links.
@@ -7290,7 +7290,7 @@ For developers:
 
 WARNING:
 - A lot of class files (*.class.php) has moved into subdirectories. So If you use
-  or develop non official modules that includes Dolibarr classes, you will have to rename
+  or develop non official modules that include Dolibarr classes, you will have to rename
   path to thoose classes into the include function.
 - Also, parameters of the "fetch()" method for class "User" has changed to reflect
   other fetch methods.
@@ -7465,7 +7465,7 @@ For developers:
   to get value of an amount in text.
 - A module can add subsitution keys in makesubsitutions() functions.
 - Add $conf->browser->phone defined to optimise code for smartphone browsers.
-- All external libs are now in same directory /includes.
+- All external libs are now in same directory /include.
 - All install files are now in same directory /install.
 
 
@@ -7600,7 +7600,7 @@ For developers:
 - Update skeletons (some fixes and add function createFromClone).
 - Add an experimental Cash Desk module.
 - Added new triggers events in agenda module.
-- All submodules are moved in the includes directory.
+- All submodules are moved in the include directory.
 - Removed some deprecated files.
 - Menu managers now use same class name for their menu entry
   and add a different value in an HTML id for each entry. This allows

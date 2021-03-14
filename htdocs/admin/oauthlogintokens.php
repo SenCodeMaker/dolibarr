@@ -189,15 +189,15 @@ if ($mode == 'setup' && $user->admin) {
 		// Show value of token
 		$tokenobj = null;
 		// Token
-		require_once DOL_DOCUMENT_ROOT.'/includes/OAuth/bootstrap.php';
-		require_once DOL_DOCUMENT_ROOT.'/includes/OAuth/bootstrap.php';
+		require_once DOL_DOCUMENT_ROOT.'/inclusions/OAuth/bootstrap.php';
+		require_once DOL_DOCUMENT_ROOT.'/inclusions/OAuth/bootstrap.php';
 		// Dolibarr storage
 		$storage = new DoliStorage($db, $conf);
 		try {
 			$tokenobj = $storage->retrieveAccessToken($OAUTH_SERVICENAME);
 		} catch (Exception $e) {
 			// Return an error if token not found
-		}
+		
 
 		// Set other properties
 		$refreshtoken = false;

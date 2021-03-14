@@ -49,7 +49,7 @@ require_once DOL_DOCUMENT_ROOT.'/core/lib/security2.lib.php';
 require_once DOL_DOCUMENT_ROOT.'/core/class/html.formcompany.class.php';
 require_once DOL_DOCUMENT_ROOT.'/dav/dav.class.php';
 require_once DOL_DOCUMENT_ROOT.'/dav/dav.lib.php';
-require_once DOL_DOCUMENT_ROOT.'/includes/sabre/autoload.php';
+require_once DOL_DOCUMENT_ROOT.'/inclusions/sabre/autoload.php';
 
 
 $user = new User($db);
