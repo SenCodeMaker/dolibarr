@@ -13,12 +13,12 @@
 if [ "x$1" != "xlist" -a "x$1" != "xfix" ]
 then
     echo "Detect and fix bad UTF8 encoded files (UTF8 must not use BOM char)"
-	echo "Usage: fixutf8bomfiles.sh (list|fix) [addincludes]"
+	echo "Usage: fixutf8bomfiles.sh (list|fix) [addinclude]"
 fi
 
-if [ "x$2" != "xaddincludes" ]
+if [ "x$2" != "xaddinclude" ]
 then
-	export moreoptions="--exclude-dir='includes'"
+	export moreoptions="--exclude-dir='include'"
 fi
 
 # To detec

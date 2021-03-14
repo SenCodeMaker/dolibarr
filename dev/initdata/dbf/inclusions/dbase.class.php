@@ -1,6 +1,6 @@
 <?php
 /**
- * \file        dev/initdata/dbf/includes/dbase.class.php
+ * \file        dev/initdata/dbf/inclusions/dbase.class.php
  * \ingroup     dev
  * \brief       Class to manage DBF databases
  */
