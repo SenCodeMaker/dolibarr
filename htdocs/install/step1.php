@@ -148,7 +148,7 @@ if (@file_exists($forcedfile)) {
 $error = 0;
 
 error_log($db_type);
-error_lo($db_host);
+error_log($db_host);
 error_log($db_port);
 error_log($db_name);
 error_log('-----------------------\n');
@@ -224,7 +224,7 @@ if (!empty($main_url) && substr($main_url, dol_strlen($main_url) - 1) == "/")
 }
 
 error_log($db_type);
-error_lo($db_host);
+error_log($db_host);
 error_log($db_port);
 error_log($db_name);
 error_log('-----------------------\n');
