@@ -521,10 +521,10 @@ function detect_dolibarr_main_document_root()
 	}
 	
 	error_log($dolibarr_main_document_root);
-	error_log('f-detectedetdtecettedc \n');
+	error_log('1-detectedetdtecettedc \n');
 
 	return $dolibarr_main_document_root;
-f
+}
 
 /**
  * Automatically detect Dolibarr's main data root
