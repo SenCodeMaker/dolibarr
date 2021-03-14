@@ -48,15 +48,6 @@ $main_url = GETPOST('main_url') ?GETPOST('main_url') : (empty($argv[5]) ? '' : $
 $userroot = GETPOST('db_user_root', 'alpha') ?GETPOST('db_user_root', 'alpha') : (empty($argv[6]) ? '' : $argv[6]);
 $passroot = GETPOST('db_pass_root', 'none') ?GETPOST('db_pass_root', 'none') : (empty($argv[7]) ? '' : $argv[7]);
 // Database server
-error_log(GETPOST('db_type', 'none'));
-error_log(GETPOST('db_type', 'aZ09'));
-error_log('-----------------------\n');
-error_log('-----------------------\n');
-error_log('-----------------------\n');
-error_log('-----------------------\n');
-error_log('-----------------------\n');
-error_log(print_r($argv[8],true));
-error_log(print_r($argv,true));
 $db_type = GETPOST('db_type', 'aZ09') ?GETPOST('db_type', 'aZ09') : (empty($argv[8]) ? '' : $argv[8]);
 $db_host = GETPOST('db_host', 'alpha') ?GETPOST('db_host', 'alpha') : (empty($argv[9]) ? '' : $argv[9]);
 $db_name = GETPOST('db_name', 'aZ09') ?GETPOST('db_name', 'aZ09') : (empty($argv[10]) ? '' : $argv[10]);
@@ -66,6 +57,15 @@ $db_port = GETPOST('db_port', 'int') ?GETPOST('db_port', 'int') : (empty($argv[1
 $db_prefix = GETPOST('db_prefix', 'aZ09') ?GETPOST('db_prefix', 'aZ09') : (empty($argv[14]) ? '' : $argv[14]);
 $db_create_database = GETPOST('db_create_database', 'alpha') ?GETPOST('db_create_database', 'alpha') : (empty($argv[15]) ? '' : $argv[15]);
 $db_create_user = GETPOST('db_create_user', 'alpha') ?GETPOST('db_create_user', 'alpha') : (empty($argv[16]) ? '' : $argv[16]);
+error_log($db_type);
+error_lo($db_host);
+error_log($db_port);
+error_log($db_name);
+error_log('-----------------------\n');
+error_log('-----------------------\n');
+error_log('-----------------------\n');
+error_log('-----------------------\n');
+error_log('-----------------------\n');
 // Force https
 $main_force_https = ((GETPOST("main_force_https", 'alpha') && (GETPOST("main_force_https", 'alpha') == "on" || GETPOST("main_force_https", 'alpha') == 1)) ? '1' : '0');
 // Use alternative directory
@@ -147,6 +147,16 @@ if (@file_exists($forcedfile)) {
 
 $error = 0;
 
+error_log($db_type);
+error_lo($db_host);
+error_log($db_port);
+error_log($db_name);
+error_log('-----------------------\n');
+error_log('-----------------------\n');
+error_log('-----------------------\n');
+error_log('-----------------------\n');
+error_log('-----------------------\n');
+
 
 /*
  *	View
@@ -212,6 +222,16 @@ if (!empty($main_url) && substr($main_url, dol_strlen($main_url) - 1) == "/")
 {
 	$main_url = substr($main_url, 0, dol_strlen($main_url) - 1);
 }
+
+error_log($db_type);
+error_lo($db_host);
+error_log($db_port);
+error_log($db_name);
+error_log('-----------------------\n');
+error_log('-----------------------\n');
+error_log('-----------------------\n');
+error_log('-----------------------\n');
+error_log('-----------------------\n');
 
 // Test database connection
 if (!$error) {
