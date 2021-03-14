@@ -39,7 +39,7 @@
 	    <directory suffix=".php">../../htdocs/products/canvas/</directory>
 	    <directory suffix=".php">../../htdocs/contact/canvas/</directory>
 	    <directory suffix=".php">../../htdocs/societe/canvas/</directory>
-	    <directory suffix=".php">../../htdocs/includes/</directory>
+	    <directory suffix=".php">../../htdocs/inclusions/</directory>
 	    </exclude>
 	  </whitelist>
 	  <blacklist>
@@ -54,7 +54,7 @@
 	    <directory suffix=".php">../../htdocs/products/canvas/</directory>
 	    <directory suffix=".php">../../htdocs/contact/canvas/</directory>
 	    <directory suffix=".php">../../htdocs/societe/canvas/</directory>
-	    <directory suffix=".php">../../htdocs/includes/</directory>
+	    <directory suffix=".php">../../htdocs/inclusions/</directory>
 	  </blacklist>
 	</filter>
 </phpunit>

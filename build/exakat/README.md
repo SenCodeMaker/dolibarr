@@ -18,7 +18,7 @@ php
 
 
 Edit config.ini file to exclude some dirs:
-ignore_dirs[] = "/htdocs/includes";
+ignore_dirs[] = "/htdocs/include";
 ignore_dirs[] = "/scripts";
 ignore_dirs[] = "/build";
 ignore_dirs[] = "/dev";

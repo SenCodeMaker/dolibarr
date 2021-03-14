@@ -35,7 +35,7 @@ AutoReqProv: no
 
 %description
 An easy to use CRM & ERP open source/free software package for small  
-and medium companies, foundations or freelances. It includes different 
+and medium companies, foundations or freelances. It inclusions different 
 features for Enterprise Resource Planning (ERP) and Customer Relationship 
 Management (CRM) but also for different other activities.
 Dolibarr was designed to provide only features you need and be easy to 
@@ -57,7 +57,7 @@ et bien d'autres choses dans une interface pensée pour la simplicité.
 
 %description -l it
 Un programmo gestionale per piccole e medie
-imprese, fondazioni e liberi professionisti. Include varie funzionalità per
+imprese, fondazioni e liberi professionisti. inclusions varie funzionalità per
 Enterprise Resource Planning e gestione dei clienti (CRM), ma anche ulteriori
 attività. Progettato per poter fornire solo ciò di cui hai bisogno 
 ed essere facile da usare.
@@ -103,10 +103,10 @@ cui hai bisogno ed essere facile da usare.
 %{__cp} -pr build/tgz/*     $RPM_BUILD_ROOT%{_datadir}/%{name}/build/tgz
 %{__cp} -pr htdocs  $RPM_BUILD_ROOT%{_datadir}/%{name}
 %{__cp} -pr scripts $RPM_BUILD_ROOT%{_datadir}/%{name}
-%{__rm} -rf $RPM_BUILD_ROOT%{_datadir}/%{name}/htdocs/includes/ckeditor/_source  
-%{__rm} -rf $RPM_BUILD_ROOT%{_datadir}/%{name}/htdocs/includes/adodbtime  
-%{__rm} -rf $RPM_BUILD_ROOT%{_datadir}/%{name}/htdocs/includes/nusoap
-%{__rm} -rf $RPM_BUILD_ROOT%{_datadir}/%{name}/htdocs/includes/fonts
+%{__rm} -rf $RPM_BUILD_ROOT%{_datadir}/%{name}/htdocs/inclusions/ckeditor/_source  
+%{__rm} -rf $RPM_BUILD_ROOT%{_datadir}/%{name}/htdocs/inclusions/adodbtime  
+%{__rm} -rf $RPM_BUILD_ROOT%{_datadir}/%{name}/htdocs/inclusions/nusoap
+%{__rm} -rf $RPM_BUILD_ROOT%{_datadir}/%{name}/htdocs/inclusions/fonts
 
 # Lang
 echo "%defattr(0644, root, root, 0755)" > %{name}.lang
@@ -195,7 +195,7 @@ done >>%{name}.lang
 %_datadir/dolibarr/htdocs/holiday
 %_datadir/dolibarr/htdocs/hrm
 %_datadir/dolibarr/htdocs/imports
-%_datadir/dolibarr/htdocs/includes
+%_datadir/dolibarr/htdocs/inclusions
 %_datadir/dolibarr/htdocs/install
 %_datadir/dolibarr/htdocs/intracommreport
 %_datadir/dolibarr/htdocs/langs/HOWTO-Translation.txt

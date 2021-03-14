@@ -89,29 +89,29 @@ override_dh_install:
 	rm -fr build/zip
 	
 	# clean from all PHP embedded libraries (we use package dependencies instead)
-#	rm -fr htdocs/includes/adodbtime
-#	rm -fr htdocs/includes/geoip
-#	rm -fr htdocs/includes/nusoap
-#	rm -fr htdocs/includes/odtphp/zip/pclzip
+#	rm -fr htdocs/inclusions/adodbtime
+#	rm -fr htdocs/inclusions/geoip
+#	rm -fr htdocs/inclusions/nusoap
+#	rm -fr htdocs/inclusions/odtphp/zip/pclzip
 	# clean from all JS-CSS embedded libraries (we use package dependencies instead)
-#	rm -fr htdocs/includes/ckeditor
-#	rm -fr htdocs/includes/jquery/js
-#	rm -fr htdocs/includes/jquery/css
-#	rm -fr htdocs/includes/jquery/plugins/flot
+#	rm -fr htdocs/inclusions/ckeditor
+#	rm -fr htdocs/inclusions/jquery/js
+#	rm -fr htdocs/inclusions/jquery/css
+#	rm -fr htdocs/inclusions/jquery/plugins/flot
 	# clean from all embedded fonts (we use package dependencies instead)
-#	rm -fr htdocs/includes/fonts
+#	rm -fr htdocs/inclusions/fonts
 
 	# clean from useless files
-	rm -fr htdocs/includes/jquery/plugins/multiselect
-	rm -fr htdocs/includes/tcpdf/fonts/dejavu-fonts-ttf-2.33
-	rm -fr htdocs/includes/tcpdf/fonts/freefont-20100919
-	rm -fr htdocs/includes/tcpdf/fonts/utils
+	rm -fr htdocs/inclusions/jquery/plugins/multiselect
+	rm -fr htdocs/inclusions/tcpdf/fonts/dejavu-fonts-ttf-2.33
+	rm -fr htdocs/inclusions/tcpdf/fonts/freefont-20100919
+	rm -fr htdocs/inclusions/tcpdf/fonts/utils
 	# clean from files to avoid warning of missing dependencies
-	rm -fr htdocs/includes/jquery/plugins/jqueryFileTree/connectors/jqueryFileTree.py
+	rm -fr htdocs/inclusions/jquery/plugins/jqueryFileTree/connectors/jqueryFileTree.py
 
-	# Licence files are already included into copyright file.
-	rm -f  htdocs/includes/jquery/plugins/flot/LICENSE.txt
-	rm -f  htdocs/includes/tcpdf/LICENSE.TXT
+	# Licence files are already inclusionsd into copyright file.
+	rm -f  htdocs/inclusions/jquery/plugins/flot/LICENSE.txt
+	rm -f  htdocs/inclusions/tcpdf/LICENSE.TXT
 
 	# Drop unwanted executable permissions
 	find debian/dolibarr/usr/share/dolibarr/htdocs -type f -print0 | \

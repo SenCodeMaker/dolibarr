@@ -391,7 +391,7 @@ if ($nboftargetok) {
 		chdir("$SOURCE");
 		
 		print "Clean $SOURCE/htdocs\n";
-		$ret=`rm -f  $SOURCE/htdocs/includes/autoload.php`;
+		$ret=`rm -f  $SOURCE/htdocs/inclusions/autoload.php`;
 		
 		$ret=`git ls-files . --exclude-standard --others`;
 		if ($ret)
@@ -594,41 +594,41 @@ if ($nboftargetok) {
 	    $ret=`rm -f  $BUILDROOT/$PROJECT/.gitignore $BUILDROOT/$PROJECT/*/.gitignore $BUILDROOT/$PROJECT/*/*/.gitignore $BUILDROOT/$PROJECT/*/*/*/.gitignore $BUILDROOT/$PROJECT/*/*/*/*/.gitignore $BUILDROOT/$PROJECT/*/*/*/*/*/.gitignore $BUILDROOT/$PROJECT/*/*/*/*/*/*/.gitignore`;
 		
 		# Removed files installed by the awful composer   	    
-   	    $ret=`rm -f  $BUILDROOT/$PROJECT/htdocs/includes/geoip/sample*.*`;
-        $ret=`rm -f  $BUILDROOT/$PROJECT/htdocs/includes/bin`;
-        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/includes/ckeditor/ckeditor/adapters`;		# Keep this removal in case we embed libraries
-        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/includes/ckeditor/ckeditor/samples`;		# Keep this removal in case we embed libraries
-        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/includes/ckeditor/_source`;					# _source must be kept into tarball for official debian, not for the rest
-        $ret=`rm -f  $BUILDROOT/$PROJECT/htdocs/includes/composer`;
-        $ret=`rm -f  $BUILDROOT/$PROJECT/htdocs/includes/doctrine`;
-        $ret=`rm -f  $BUILDROOT/$PROJECT/htdocs/includes/jquery/plugins/multiselect/MIT-LICENSE.txt`;
-        $ret=`rm -f  $BUILDROOT/$PROJECT/htdocs/includes/jquery/plugins/select2/release.sh`;
-        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/includes/mike42/escpos-php/doc`;
-        $ret=`rm -f  $BUILDROOT/$PROJECT/htdocs/includes/mike42/escpos-php/example`;
-        $ret=`rm -f  $BUILDROOT/$PROJECT/htdocs/includes/mike42/escpos-php/test`;
-        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/includes/mobiledetect/mobiledetectlib/.gitmodules`;
-        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/includes/mobiledetect/mobiledetectlib/docs`;
-        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/includes/nnnick/chartjs/.github`;
-        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/includes/nnnick/chartjs/docs`;
-        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/includes/nnnick/chartjs/samples`;
-        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/includes/nnnick/chartjs/scripts`;
-        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/includes/nnnick/chartjs/src`;
-        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/includes/nnnick/chartjs/test`;
-        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/includes/nusoap/lib/Mail`;
-        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/includes/nusoap/samples`;
-        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/includes/php-iban/docs`;
-        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/includes/sabre/sabre/*/tests`;
-        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/includes/stripe/tests`;
-        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/includes/stripe/LICENSE`;
-        $ret=`rm -f  $BUILDROOT/$PROJECT/htdocs/includes/tecnickcom/examples`;
-        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/includes/tecnickcom/tcpdf/fonts/dejavu-fonts-ttf-*`;
-        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/includes/tecnickcom/tcpdf/fonts/freefont-*`;
-        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/includes/tecnickcom/tcpdf/fonts/ae_fonts_*`;
-        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/includes/tecnickcom/tcpdf/fonts/utils`;
-        $ret=`rm -f  $BUILDROOT/$PROJECT/htdocs/includes/tecnickcom/tcpdf/tools`;
-        $ret=`rm -f  $BUILDROOT/$PROJECT/htdocs/includes/vendor`;
-        $ret=`rm -f  $BUILDROOT/$PROJECT/htdocs/includes/webmozart`;
-        $ret=`rm -f  $BUILDROOT/$PROJECT/htdocs/includes/autoload.php`;
+   	    $ret=`rm -f  $BUILDROOT/$PROJECT/htdocs/inclusions/geoip/sample*.*`;
+        $ret=`rm -f  $BUILDROOT/$PROJECT/htdocs/inclusions/bin`;
+        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/inclusions/ckeditor/ckeditor/adapters`;		# Keep this removal in case we embed libraries
+        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/inclusions/ckeditor/ckeditor/samples`;		# Keep this removal in case we embed libraries
+        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/inclusions/ckeditor/_source`;					# _source must be kept into tarball for official debian, not for the rest
+        $ret=`rm -f  $BUILDROOT/$PROJECT/htdocs/inclusions/composer`;
+        $ret=`rm -f  $BUILDROOT/$PROJECT/htdocs/inclusions/doctrine`;
+        $ret=`rm -f  $BUILDROOT/$PROJECT/htdocs/inclusions/jquery/plugins/multiselect/MIT-LICENSE.txt`;
+        $ret=`rm -f  $BUILDROOT/$PROJECT/htdocs/inclusions/jquery/plugins/select2/release.sh`;
+        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/inclusions/mike42/escpos-php/doc`;
+        $ret=`rm -f  $BUILDROOT/$PROJECT/htdocs/inclusions/mike42/escpos-php/example`;
+        $ret=`rm -f  $BUILDROOT/$PROJECT/htdocs/inclusions/mike42/escpos-php/test`;
+        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/inclusions/mobiledetect/mobiledetectlib/.gitmodules`;
+        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/inclusions/mobiledetect/mobiledetectlib/docs`;
+        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/inclusions/nnnick/chartjs/.github`;
+        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/inclusions/nnnick/chartjs/docs`;
+        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/inclusions/nnnick/chartjs/samples`;
+        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/inclusions/nnnick/chartjs/scripts`;
+        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/inclusions/nnnick/chartjs/src`;
+        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/inclusions/nnnick/chartjs/test`;
+        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/inclusions/nusoap/lib/Mail`;
+        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/inclusions/nusoap/samples`;
+        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/inclusions/php-iban/docs`;
+        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/inclusions/sabre/sabre/*/tests`;
+        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/inclusions/stripe/tests`;
+        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/inclusions/stripe/LICENSE`;
+        $ret=`rm -f  $BUILDROOT/$PROJECT/htdocs/inclusions/tecnickcom/examples`;
+        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/inclusions/tecnickcom/tcpdf/fonts/dejavu-fonts-ttf-*`;
+        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/inclusions/tecnickcom/tcpdf/fonts/freefont-*`;
+        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/inclusions/tecnickcom/tcpdf/fonts/ae_fonts_*`;
+        $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/inclusions/tecnickcom/tcpdf/fonts/utils`;
+        $ret=`rm -f  $BUILDROOT/$PROJECT/htdocs/inclusions/tecnickcom/tcpdf/tools`;
+        $ret=`rm -f  $BUILDROOT/$PROJECT/htdocs/inclusions/vendor`;
+        $ret=`rm -f  $BUILDROOT/$PROJECT/htdocs/inclusions/webmozart`;
+        $ret=`rm -f  $BUILDROOT/$PROJECT/htdocs/inclusions/autoload.php`;
 	}
 
 	# Build package for each target
@@ -683,7 +683,7 @@ if ($nboftargetok) {
 			$ret=`$cmd`;
 
 			$ret=`rm -fr $BUILDROOT/$FILENAMETGZ/build/exe`;
-			$ret=`rm -fr $BUILDROOT/$FILENAMETGZ/htdocs/includes/ckeditor/_source`;	# We can't remove it with exclude file, we need it for some tarball packages
+			$ret=`rm -fr $BUILDROOT/$FILENAMETGZ/htdocs/inclusions/ckeditor/_source`;	# We can't remove it with exclude file, we need it for some tarball packages
 			
 			print "Compress $FILENAMETGZ into $FILENAMETGZ.tgz...\n";
 			$cmd="tar --exclude-vcs --exclude-from \"$BUILDROOT/$PROJECT/build/tgz/tar_exclude.txt\" --directory \"$BUILDROOT\" --mode=go-w --group=500 --owner=500 -czvf \"$BUILDROOT/$FILENAMETGZ.tgz\" $FILENAMETGZ";
@@ -715,7 +715,7 @@ if ($nboftargetok) {
 			$ret=`$cmd`;
 
 			$ret=`rm -fr $BUILDROOT/$FILENAMEXZ/build/exe`;
-			$ret=`rm -fr $BUILDROOT/$FILENAMEXZ/htdocs/includes/ckeditor/_source`;	# We can't remove it with exclude file, we need it for some tarball packages
+			$ret=`rm -fr $BUILDROOT/$FILENAMEXZ/htdocs/inclusions/ckeditor/_source`;	# We can't remove it with exclude file, we need it for some tarball packages
 			
 			print "Compress $FILENAMEXZ into $FILENAMEXZ.xz...\n";
 
@@ -752,7 +752,7 @@ if ($nboftargetok) {
 			$ret=`$cmd`;
 
 			$ret=`rm -fr $BUILDROOT/$FILENAMEZIP/build/exe`;
-			$ret=`rm -fr $BUILDROOT/$FILENAMEZIP/htdocs/includes/ckeditor/_source`;	# We can't remove it with exclude file, we need it for some tarball packages
+			$ret=`rm -fr $BUILDROOT/$FILENAMEZIP/htdocs/inclusions/ckeditor/_source`;	# We can't remove it with exclude file, we need it for some tarball packages
 
 			print "Compress $FILENAMEZIP into $FILENAMEZIP.zip...\n";
 
@@ -800,7 +800,7 @@ if ($nboftargetok) {
 			$ret=`$cmd`;
 
 			# Removed files we don't need (already removed before)
-			#$ret=`rm -fr $BUILDROOT/$FILENAMETGZ2/htdocs/includes/ckeditor/_source`;
+			#$ret=`rm -fr $BUILDROOT/$FILENAMETGZ2/htdocs/inclusions/ckeditor/_source`;
 
 			print "Set permissions on files/dir\n";
 			$ret=`chmod -R 755 $BUILDROOT/$FILENAMETGZ2`;
@@ -932,25 +932,25 @@ if ($nboftargetok) {
 			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/build/rpm`;
 			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/build/zip`;
 			# Removed duplicate license files
-			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/includes/ckeditor/ckeditor/_source/LICENSE.md`;
-			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/includes/ckeditor/ckeditor/_source/plugins/scayt/LICENSE.md`;
-			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/includes/ckeditor/ckeditor/_source/plugins/wsc/LICENSE.md`;
-			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/includes/ckeditor/ckeditor/LICENSE.md`;
-			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/includes/ckeditor/ckeditor/plugins/scayt/LICENSE.md`;
-			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/includes/ckeditor/ckeditor/plugins/wsc/LICENSE.md`;
-			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/includes/php-iban/LICENSE`;
-			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/includes/jquery/plugins/flot/LICENSE.txt`;
-			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/includes/jquery/plugins/datatables/extensions/ColReorder/License.txt`;
-			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/includes/jquery/plugins/datatables/extensions/ColVis/License.txt`;
-			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/includes/jquery/plugins/datatables/extensions/FixedColumns/License.txt`;
-			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/includes/jquery/plugins/datatables/extensions/Responsive/License.txt`;
-			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/includes/jquery/plugins/datatables/license.txt`;
-			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/includes/jquery/plugins/select2/LICENSE`;
-			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/includes/mike42/escpos-php/LICENSE.md`;
-			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/includes/mobiledetect/mobiledetectlib/LICENSE.txt`;
+			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/inclusions/ckeditor/ckeditor/_source/LICENSE.md`;
+			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/inclusions/ckeditor/ckeditor/_source/plugins/scayt/LICENSE.md`;
+			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/inclusions/ckeditor/ckeditor/_source/plugins/wsc/LICENSE.md`;
+			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/inclusions/ckeditor/ckeditor/LICENSE.md`;
+			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/inclusions/ckeditor/ckeditor/plugins/scayt/LICENSE.md`;
+			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/inclusions/ckeditor/ckeditor/plugins/wsc/LICENSE.md`;
+			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/inclusions/php-iban/LICENSE`;
+			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/inclusions/jquery/plugins/flot/LICENSE.txt`;
+			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/inclusions/jquery/plugins/datatables/extensions/ColReorder/License.txt`;
+			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/inclusions/jquery/plugins/datatables/extensions/ColVis/License.txt`;
+			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/inclusions/jquery/plugins/datatables/extensions/FixedColumns/License.txt`;
+			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/inclusions/jquery/plugins/datatables/extensions/Responsive/License.txt`;
+			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/inclusions/jquery/plugins/datatables/license.txt`;
+			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/inclusions/jquery/plugins/select2/LICENSE`;
+			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/inclusions/mike42/escpos-php/LICENSE.md`;
+			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/inclusions/mobiledetect/mobiledetectlib/LICENSE.txt`;
 			
 			# Removed files we don't need (already removed)
-			#$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/includes/ckeditor/ckeditor/_source`;
+			#$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/inclusions/ckeditor/ckeditor/_source`;
 			
 			# Rename upstream changelog to match debian rules
 			$ret=`mv $BUILDROOT/$PROJECT.tmp/ChangeLog $BUILDROOT/$PROJECT.tmp/changelog`;

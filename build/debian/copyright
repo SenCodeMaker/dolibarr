@@ -61,7 +61,7 @@ License: GPL-3+
 
 ------------------------------------------------------------
 
-Files: htdocs/includes/adodbtime/*
+Files: htdocs/include/adodbtime/*
 Copyright: 2003-2005, John Lim
            unknown, jackbbs
 License: BSD-3-Clause
@@ -86,7 +86,7 @@ Comment:
 
 ------------------------------------------------------------
 
-Files: htdocs/includes/ckeditor/*
+Files: htdocs/include/ckeditor/*
 Copyright: 2003-2012 CKSource - Frederico Knabben
 License: GPL-2+
  The ckeditor is tripple licensed under the GNU General Public License (GPL),
@@ -118,7 +118,7 @@ Comment:
 
 ------------------------------------------------------------
 
-Files: htdocs/includes/fonts/*
+Files: htdocs/include/fonts/*
 Copyright: 2003, Bitstream Inc
 	   unknown, Gavin Graham
 License: other
@@ -192,7 +192,7 @@ License: CC-BY-SA-3.0
 
 ------------------------------------------------------------
 
-Files: htdocs/includes/geoip2/*
+Files: htdocs/include/geoip2/*
 Copyright: 2007 MaxMind LLC
 License: CC-By-SA
  This library is free software; you can redistribute it and/or
@@ -215,7 +215,7 @@ License: CC-By-SA
 
 ------------------------------------------------------------
 
-Files: htdocs/includes/jquery/*
+Files: htdocs/include/jquery/*
 Copyright: JQuery team
 https://www.jquery.com
 License: GPL-2+ or MIT
@@ -267,7 +267,7 @@ Comment:
 
 ------------------------------------------------------------
 
-Files: htdocs/includes/jquery/plugins/flot/*
+Files: htdocs/include/jquery/plugins/flot/*
 Copyright: Flot team
 License: Public-Domain
  This work is not subject to copyright in any jurisdiction
@@ -278,7 +278,7 @@ Comment:
 
 ------------------------------------------------------------
 
-Files: htdocs/includes/jsgantt/*
+Files: htdocs/include/jsgantt/*
 Copyright: JSGantt team
 License: GPL-2+
  This program is free software; you can redistribute it
@@ -303,7 +303,7 @@ License: GPL-2+
 
 ------------------------------------------------------------
 
-Files: htdocs/includes/nusoap/*
+Files: htdocs/include/nusoap/*
 Copyright: 2002-2010 NuSphere Corporation
 License: LGPL-2.1+
  This library is free software; you can redistribute it and/or
@@ -329,7 +329,7 @@ Comment:
 
 ------------------------------------------------------------
 
-Files: htdocs/includes/odtphp/*
+Files: htdocs/include/odtphp/*
 Copyright: 2008, Julien Pauli
            2008, Cyril PIERRE de GEYER 
            2010, Laurent Destailleur <eldy@users.sourceforge.net>
@@ -356,7 +356,7 @@ License: GPL-2+
 
 ------------------------------------------------------------
 
-Files: htdocs/includes/tecnickcom/*
+Files: htdocs/include/tecnickcom/*
 Copyright: 2002-2013 Nicola Asuni - Tecnick.com LTD
 License: LGPL-3.0+
  TCPDF is free software: you can redistribute it and/or modify it

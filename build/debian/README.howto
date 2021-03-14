@@ -298,18 +298,18 @@ If script fails with error Bad certificate, you can set "export PERL_LWP_SSL_VER
 
 * Edit orig.tar.gz file to remove 
 - debian
-- htdocs/includes/ckeditor
-- htdocs/includes/jquery/css
-- htdocs/includes/jquery/js
-- htdocs/includes/jquery/plugins/flot
-- htdocs/includes/jquery/plugins/multiselect
-- htdocs/includes/jquery/plugins/datatables
-- htdocs/includes/jszip
-- htdocs/includes/mike42
-- htdocs/includes/phpoffice
-- htdocs/includes/restler/framework/Luracast/Restler/explorer
-- htdocs/includes/swiftmailer
-- htdocs/includes/tcpdf or htdocs/includes/tecnickcom
+- htdocs/include/ckeditor
+- htdocs/include/jquery/css
+- htdocs/include/jquery/js
+- htdocs/include/jquery/plugins/flot
+- htdocs/include/jquery/plugins/multiselect
+- htdocs/include/jquery/plugins/datatables
+- htdocs/include/jszip
+- htdocs/include/mike42
+- htdocs/include/phpoffice
+- htdocs/include/restler/framework/Luracast/Restler/explorer
+- htdocs/include/swiftmailer
+- htdocs/include/tcpdf or htdocs/include/tecnickcom
 And rename file into 
 dolibarr-x.y.z+dfsgw.tgz
 (x.y.z = version, w start from 1 and is increased for each new git-import-orig already done)
@@ -400,7 +400,7 @@ Then name of package "dolibarr"
 Fill message, for example:
 "Please unblock package dolibarr
 A security error CVE-2015-3935 was reported and is fixed into package 3.5.7.
-Note that package 3.5.7 contains not only fixed for bugs reported to debian. It includes other fixes, but they are all related to stability or security,
+Note that package 3.5.7 contains not only fixed for bugs reported to debian. It include other fixes, but they are all related to stability or security,
 so it is a better solution to validate this maintenance release than applying a patch of the only CVE-2015-3935. 
 After discussion with ..., it appears that security holes are enough to request this unblock request."
 
@@ -414,7 +414,7 @@ Then name of package "dolibarr"
 Fill message, for example:
 "
 A security error CVE-2015-3935 was reported for Dolibarr ERP CRM package. This bug is fixed into official package 3.5.7 of Dolibarr.
-Package 3.5.7 is a maintenance release compared to 3.5.5 and contains only fixes. But not only bugs reported to debian, it includes also other fixes (but they are all related to stability or security).
+Package 3.5.7 is a maintenance release compared to 3.5.5 and contains only fixes. But not only bugs reported to debian, it include also other fixes (but they are all related to stability or security).
 I think it is a better solution to validate this maintenance release based on the new upstream version of Dolibarr than applying a patch of the only CVE-2015-3935.
 Pro are:
 - It fixes all debian reported bugs (including security one)
@@ -440,7 +440,7 @@ Then name of package "dolibarr"
 Fill message, for example:
 "Please unblock package dolibarr
 A security error CVE-2015-3935 was reported and is fixed into package 3.5.7.
-Note that package 3.5.7 contains not only fixed for bugs reported to debian. It includes other fixes, but they are all related to stability or security,
+Note that package 3.5.7 contains not only fixed for bugs reported to debian. It include other fixes, but they are all related to stability or security,
 so it is a better solution to validate this maintenance release than applying a patch of the only CVE-2015-3935. 
 After discussion with ..., it appears that security holes are enough to request this unblock request."
 
