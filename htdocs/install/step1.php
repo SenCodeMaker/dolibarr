@@ -547,6 +547,8 @@ if (!$error && $db->connected && $action == "set")
 	// Create database and admin user database
 	if (!$error)
 	{
+	    error_log($dolibarr_main_document_root);
+	    error_log('#######################22#\n');
 		// We reload configuration file
 		conf($dolibarr_main_document_root);
 
@@ -1023,6 +1025,9 @@ function write_conf_file($conffile)
 
 		if (file_exists("$conffile"))
 		{
+		    error_log($dolibarr_main_document_root);
+		    error_log('########################\n');
+		    error_log($conffile);
 			include $conffile; // force config reload, do not put include_once
 			conf($dolibarr_main_document_root);
 
