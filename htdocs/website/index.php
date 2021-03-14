@@ -2248,21 +2248,21 @@ if ($action == 'confirmgeneratesitemaps') {
 $helpurl = 'EN:Module_Website|FR:Module_Website_FR|ES:M&oacute;dulo_Website';
 
 $arrayofjs = array(
-	'/inclusions/ace/src/ace.js',
-	'/inclusions/ace/src/ext-statusbar.js',
-	'/inclusions/ace/src/ext-language_tools.js',
-	//'/inclusions/ace/src/ext-chromevox.js'
-	//'/inclusions/jquery/plugins/jqueryscoped/jquery.scoped.js',
+	'/embarquements/ace/src/ace.js',
+	'/embarquements/ace/src/ext-statusbar.js',
+	'/embarquements/ace/src/ext-language_tools.js',
+	//'/embarquements/ace/src/ext-chromevox.js'
+	//'/embarquements/jquery/plugins/jqueryscoped/jquery.scoped.js',
 );
 $arrayofcss = array();
 
 $moreheadcss = '';
 $moreheadjs = '';
 
-$arrayofjs[] = 'inclusions/jquery/plugins/blockUI/jquery.blockUI.js';
+$arrayofjs[] = 'embarquements/jquery/plugins/blockUI/jquery.blockUI.js';
 $arrayofjs[] = 'core/js/blockUI.js'; // Used by ecm/tpl/enabledfiletreeajax.tpl.php
 if (empty($conf->global->MAIN_ECM_DISABLE_JS)) {
-	$arrayofjs[] = "inclusions/jquery/plugins/jqueryFileTree/jqueryFileTree.js";
+	$arrayofjs[] = "embarquements/jquery/plugins/jqueryFileTree/jqueryFileTree.js";
 }
 
 $moreheadjs .= '<script type="text/javascript">'."\n";

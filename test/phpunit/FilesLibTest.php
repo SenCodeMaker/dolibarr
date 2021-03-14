@@ -439,7 +439,7 @@ class FilesLibTest extends PHPUnit\Framework\TestCase
 		global $conf,$user,$langs,$db;
 
 		// Scan dir to guaruante we on't have library jquery twice (we accept exception of duplicte into ckeditor because all dir is removed for debian package, so there is no duplicate).
-		$founddirs=dol_dir_list(DOL_DOCUMENT_ROOT.'/inclusions/', 'files', 1, '^jquery\.js', array('ckeditor'));
+		$founddirs=dol_dir_list(DOL_DOCUMENT_ROOT.'/embarquements/', 'files', 1, '^jquery\.js', array('ckeditor'));
 		print __METHOD__." count(founddirs)=".count($founddirs)."\n";
 		$this->assertEquals(1, count($founddirs));
 	}

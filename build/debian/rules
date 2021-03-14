@@ -89,29 +89,29 @@ override_dh_install:
 	rm -fr build/zip
 	
 	# clean from all PHP embedded libraries (we use package dependencies instead)
-#	rm -fr htdocs/inclusions/adodbtime
-#	rm -fr htdocs/inclusions/geoip
-#	rm -fr htdocs/inclusions/nusoap
-#	rm -fr htdocs/inclusions/odtphp/zip/pclzip
+#	rm -fr htdocs/embarquements/adodbtime
+#	rm -fr htdocs/embarquements/geoip
+#	rm -fr htdocs/embarquements/nusoap
+#	rm -fr htdocs/embarquements/odtphp/zip/pclzip
 	# clean from all JS-CSS embedded libraries (we use package dependencies instead)
-#	rm -fr htdocs/inclusions/ckeditor
-#	rm -fr htdocs/inclusions/jquery/js
-#	rm -fr htdocs/inclusions/jquery/css
-#	rm -fr htdocs/inclusions/jquery/plugins/flot
+#	rm -fr htdocs/embarquements/ckeditor
+#	rm -fr htdocs/embarquements/jquery/js
+#	rm -fr htdocs/embarquements/jquery/css
+#	rm -fr htdocs/embarquements/jquery/plugins/flot
 	# clean from all embedded fonts (we use package dependencies instead)
-#	rm -fr htdocs/inclusions/fonts
+#	rm -fr htdocs/embarquements/fonts
 
 	# clean from useless files
-	rm -fr htdocs/inclusions/jquery/plugins/multiselect
-	rm -fr htdocs/inclusions/tcpdf/fonts/dejavu-fonts-ttf-2.33
-	rm -fr htdocs/inclusions/tcpdf/fonts/freefont-20100919
-	rm -fr htdocs/inclusions/tcpdf/fonts/utils
+	rm -fr htdocs/embarquements/jquery/plugins/multiselect
+	rm -fr htdocs/embarquements/tcpdf/fonts/dejavu-fonts-ttf-2.33
+	rm -fr htdocs/embarquements/tcpdf/fonts/freefont-20100919
+	rm -fr htdocs/embarquements/tcpdf/fonts/utils
 	# clean from files to avoid warning of missing dependencies
-	rm -fr htdocs/inclusions/jquery/plugins/jqueryFileTree/connectors/jqueryFileTree.py
+	rm -fr htdocs/embarquements/jquery/plugins/jqueryFileTree/connectors/jqueryFileTree.py
 
-	# Licence files are already inclusionsd into copyright file.
-	rm -f  htdocs/inclusions/jquery/plugins/flot/LICENSE.txt
-	rm -f  htdocs/inclusions/tcpdf/LICENSE.TXT
+	# Licence files are already embarquementsd into copyright file.
+	rm -f  htdocs/embarquements/jquery/plugins/flot/LICENSE.txt
+	rm -f  htdocs/embarquements/tcpdf/LICENSE.TXT
 
 	# Drop unwanted executable permissions
 	find debian/dolibarr/usr/share/dolibarr/htdocs -type f -print0 | \

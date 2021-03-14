@@ -71,10 +71,10 @@ $canadduser = (!empty($user->admin) || $user->rights->user->user->creer);
 $form = new Form($db);
 
 $arrayofjs = array(
-	'/inclusions/jquery/plugins/jquerytreeview/jquery.treeview.js',
-	'/inclusions/jquery/plugins/jquerytreeview/lib/jquery.cookie.js',
+	'/embarquements/jquery/plugins/jquerytreeview/jquery.treeview.js',
+	'/embarquements/jquery/plugins/jquerytreeview/lib/jquery.cookie.js',
 );
-$arrayofcss = array('/inclusions/jquery/plugins/jquerytreeview/jquery.treeview.css');
+$arrayofcss = array('/embarquements/jquery/plugins/jquerytreeview/jquery.treeview.css');
 
 llxHeader('', $langs->trans("ListOfUsers").' - '.$langs->trans("HierarchicView"), '', '', 0, 0, $arrayofjs, $arrayofcss);
 

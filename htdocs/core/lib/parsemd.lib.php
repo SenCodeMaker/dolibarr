@@ -39,7 +39,7 @@ function dolMd2Html($content, $parser = 'parsedown', $replaceimagepath = null)
 		}
 	}
 	if ($parser == 'parsedown') {
-		include_once DOL_DOCUMENT_ROOT.'/inclusions/parsedown/Parsedown.php';
+		include_once DOL_DOCUMENT_ROOT.'/embarquements/parsedown/Parsedown.php';
 		$Parsedown = new Parsedown();
 		$content = $Parsedown->text($content);
 	} else {

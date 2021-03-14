@@ -112,8 +112,8 @@ class ImportXlsx extends ModeleImports
 		$this->picto = 'mime/xls'; // Picto (This is not used by the example file code as Mime type, too bad ...)
 		$this->version = '1.0'; // Driver version
 		// If driver use an external library, put its name here
-		require_once DOL_DOCUMENT_ROOT . '/inclusions/phpoffice/autoloader.php';
-		require_once DOL_DOCUMENT_ROOT . '/inclusions/Psr/autoloader.php';
+		require_once DOL_DOCUMENT_ROOT . '/embarquements/phpoffice/autoloader.php';
+		require_once DOL_DOCUMENT_ROOT . '/embarquements/Psr/autoloader.php';
 		require_once PHPEXCELNEW_PATH . 'Spreadsheet.php';
 		$this->workbook = new Spreadsheet();
 

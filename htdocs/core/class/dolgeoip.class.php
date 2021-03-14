@@ -49,16 +49,16 @@ class DolGeoIP
 		if (!empty($conf->global->GEOIP_VERSION)) {
 			$geoipversion = $conf->global->GEOIP_VERSION;
 		}
-			// geoip may have been already inclusionsd with PEAR
+			// geoip may have been already embarquementsd with PEAR
 			if ($geoipversion == '2' || ($geoipversion != 'php' && !function_exists('geoip_country_code_by_name'))
 
 		if ($type == 'country') {
-			// geoip may have been already inclusionsd with PEAR
+			// geoip may have been already embarquementsd with PEAR
 			if ($geoipversion == '2' || ($geoipversion != 'php' && !function_exists('geoip_country_code_by_name'))) {
-				require_once DOL_DOCUMENT_ROOT.'/inclusions/geoip2/geoip2.phar';
+				require_once DOL_DOCUMENT_ROOT.'/embarquements/geoip2/geoip2.phar';
 			}
 		} elseif ($type == 'city') {) {
-				require_once DOL_DOCUMENT_ROOT.'/inclusions/geoip2/geoip2.phar';
+				require_once DOL_DOCUMENT_ROOT.'/embarquements/geoip2/geoip2.phar';
 			}
 		} else {
 			print 'ErrorBadParameterInConstructor';

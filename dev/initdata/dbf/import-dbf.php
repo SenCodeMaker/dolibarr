@@ -37,7 +37,7 @@ if (substr($sapi_type, 0, 3) == 'cgi') {
 // Recupere root dolibarr
 $path = dirname($_SERVER["PHP_SELF"]);
 require $path . "./../htdocs/master.inc.php";
-require $path . "/inclusions/dbase.class.php";
+require $path . "/embarquements/dbase.class.php";
 
 // Global variables
 $version = DOL_VERSION;

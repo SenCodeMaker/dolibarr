@@ -274,7 +274,7 @@ function checkSwiftForAccount($account)
  */
 function checkIbanForAccount($account)
 {
-	require_once DOL_DOCUMENT_ROOT.'/inclusions/php-iban/oophp-iban.php';
+	require_once DOL_DOCUMENT_ROOT.'/embarquements/php-iban/oophp-iban.php';
 
 	$iban = new IBAN($account->iban);
 	$check = $iban->Verify();

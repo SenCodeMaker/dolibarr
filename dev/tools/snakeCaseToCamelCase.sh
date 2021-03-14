@@ -18,7 +18,7 @@ else
 fi
 
 if [[ -n ${PATTERN} ]]; then
-    TCLASSFILE=$(find "${DIR_HTDOCS}" -name "${PATTERN}" | grep -v "/custom/" | grep -v "/inclusions/" | grep -v -F -f "${DIR_HTDOCS}/../.gitignore")
+    TCLASSFILE=$(find "${DIR_HTDOCS}" -name "${PATTERN}" | grep -v "/custom/" | grep -v "/embarquements/" | grep -v -F -f "${DIR_HTDOCS}/../.gitignore")
     TFile=()
     I=0
     for f in ${TCLASSFILE}; do

@@ -207,7 +207,7 @@ jQuery(document).ready(function() {
   var compcssstring;
   getcssurl = $.ajax({
     type: "GET",
-    url: \''.DOL_URL_ROOT.'/inclusions/jquery/css/base/jquery-ui.css\',
+    url: \''.DOL_URL_ROOT.'/embarquements/jquery/css/base/jquery-ui.css\',
     cache: false,
     /* async: false, */
     /*crossDomain: true, */

@@ -193,8 +193,8 @@ class ExportExcel2007 extends ModeleExports
 
 		$outputlangs->load("exports");
 
-		require_once DOL_DOCUMENT_ROOT.'/inclusions/phpoffice/autoloader.php';
-		require_once DOL_DOCUMENT_ROOT.'/inclusions/Psr/autoloader.php';
+		require_once DOL_DOCUMENT_ROOT.'/embarquements/phpoffice/autoloader.php';
+		require_once DOL_DOCUMENT_ROOT.'/embarquements/Psr/autoloader.php';
 		require_once PHPEXCELNEW_PATH.'Spreadsheet.php';
 
 		if ($this->id == 'excel2007') {

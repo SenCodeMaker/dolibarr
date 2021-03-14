@@ -132,7 +132,7 @@ foreach ($modulesdir as $dir) {
 								//     dol_syslog("Found API classname=".$classname);
 								//     $api->r->addAPIClass($classname,'');
 
-								//     require_once DOL_DOCUMENT_ROOT.'/inclusions/restler/framework/Luracast/Restler/Routes.php';
+								//     require_once DOL_DOCUMENT_ROOT.'/embarquements/restler/framework/Luracast/Restler/Routes.php';
 								//     $tmpclass = new ReflectionClass($classname);
 								//     try {
 								//         $classMetadata = CommentParser::parse($tmpclass->getDocComment());

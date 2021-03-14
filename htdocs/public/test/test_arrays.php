@@ -49,16 +49,16 @@ if (empty($usedolheader)) {
 	<meta name="author" content="Dolibarr Development Team">
 	<title>Test page</title>
 	<!-- include for JQuery (Ajax library) -->
-	<link rel="stylesheet" type="text/css" href="<?php echo DOL_URL_ROOT ?>/inclusions/jquery/css/base/jquery-ui.css" />
-	<!-- <link rel="stylesheet" type="text/css" href="<?php echo DOL_URL_ROOT ?>/inclusions/jquery/plugins/datatables/media/css/jquery.dataTables.css" /> -->
+	<link rel="stylesheet" type="text/css" href="<?php echo DOL_URL_ROOT ?>/embarquements/jquery/css/base/jquery-ui.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="<?php echo DOL_URL_ROOT ?>/embarquements/jquery/plugins/datatables/media/css/jquery.dataTables.css" /> -->
 	<link rel="stylesheet" type="text/css" title="default" href="<?php echo DOL_URL_ROOT ?>/theme/eldy/style.css.php<?php echo ($_GET["dol_use_jmobile"] == 1) ? '?dol_use_jmobile=1&dol_optimize_smallscreen=1' : ''; ?>" />
 	<!-- include JS for JQuery -->
-	<script type="text/javascript" src="<?php echo DOL_URL_ROOT ?>/inclusions/jquery/js/jquery.min.js"></script>
+	<script type="text/javascript" src="<?php echo DOL_URL_ROOT ?>/embarquements/jquery/js/jquery.min.js"></script>
 	<!-- migration fixes for removed Jquery functions -->
-	<script type="text/javascript" src="<?php echo DOL_URL_ROOT ?>/inclusions/jquery/js/jquery-migrate.min.js"></script>
-	<script type="text/javascript" src="<?php echo DOL_URL_ROOT ?>/inclusions/jquery/plugins/tablednd/jquery.tablednd.0.6.min.js"></script>
-	<!-- <script type="text/javascript" src="<?php echo DOL_URL_ROOT ?>/inclusions/jquery/plugins/datatables/media/js/jquery.dataTables.js"></script> -->
-	<script type="text/javascript" src="<?php echo DOL_URL_ROOT ?>/inclusions/jquery/plugins/select2/select2.min.js?version=4.0.0-beta"></script>
+	<script type="text/javascript" src="<?php echo DOL_URL_ROOT ?>/embarquements/jquery/js/jquery-migrate.min.js"></script>
+	<script type="text/javascript" src="<?php echo DOL_URL_ROOT ?>/embarquements/jquery/plugins/tablednd/jquery.tablednd.0.6.min.js"></script>
+	<!-- <script type="text/javascript" src="<?php echo DOL_URL_ROOT ?>/embarquements/jquery/plugins/datatables/media/js/jquery.dataTables.js"></script> -->
+	<script type="text/javascript" src="<?php echo DOL_URL_ROOT ?>/embarquements/jquery/plugins/select2/select2.min.js?version=4.0.0-beta"></script>
 	</head>
 
 	<body style="padding: 10px;">
@@ -69,20 +69,20 @@ if (empty($usedolheader)) {
 	$arraycss = array();
 	$arrayjs = array();
 	/*
-	$arraycss=array('/inclusions/jquery/plugins/datatables/media/css/jquery.dataTables.css',
-			'/inclusions/jquery/plugins/datatables/extensions/Buttons/css/buttons.dataTables.min.css',
-			'/inclusions/jquery/plugins/datatables/extensions/ColReorder/css/colReorder.dataTables.min.css'
+	$arraycss=array('/embarquements/jquery/plugins/datatables/media/css/jquery.dataTables.css',
+			'/embarquements/jquery/plugins/datatables/extensions/Buttons/css/buttons.dataTables.min.css',
+			'/embarquements/jquery/plugins/datatables/extensions/ColReorder/css/colReorder.dataTables.min.css'
 	);
-	$arrayjs=array('/inclusions/jquery/plugins/datatables/media/js/jquery.dataTables.js',
-			'/inclusions/jquery/plugins/datatables/extensions/Buttons/js/dataTables.buttons.js',
-			'/inclusions/jquery/plugins/datatables/extensions/Buttons/js/buttons.colVis.min.js',
-			'/inclusions/jquery/plugins/datatables/extensions/Buttons/js/buttons.html5.min.js',
-			'/inclusions/jquery/plugins/datatables/extensions/Buttons/js/buttons.flash.min.js',
-			'/inclusions/jquery/plugins/datatables/extensions/Buttons/js/buttons.print.min.js',
-			'/inclusions/jquery/plugins/datatables/extensions/ColReorder/js/dataTables.colReorder.min.js',
-			'/inclusions/jszip/jszip.min.js',
-			'/inclusions/pdfmake/pdfmake.min.js',
-			'/inclusions/pdfmake/vfs_fonts.js'
+	$arrayjs=array('/embarquements/jquery/plugins/datatables/media/js/jquery.dataTables.js',
+			'/embarquements/jquery/plugins/datatables/extensions/Buttons/js/dataTables.buttons.js',
+			'/embarquements/jquery/plugins/datatables/extensions/Buttons/js/buttons.colVis.min.js',
+			'/embarquements/jquery/plugins/datatables/extensions/Buttons/js/buttons.html5.min.js',
+			'/embarquements/jquery/plugins/datatables/extensions/Buttons/js/buttons.flash.min.js',
+			'/embarquements/jquery/plugins/datatables/extensions/Buttons/js/buttons.print.min.js',
+			'/embarquements/jquery/plugins/datatables/extensions/ColReorder/js/dataTables.colReorder.min.js',
+			'/embarquements/jszip/jszip.min.js',
+			'/embarquements/pdfmake/pdfmake.min.js',
+			'/embarquements/pdfmake/vfs_fonts.js'
 	);
 	*/
 

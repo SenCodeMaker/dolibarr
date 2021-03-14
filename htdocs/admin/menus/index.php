@@ -200,8 +200,8 @@ if ($action == 'up') {
 $form = new Form($db);
 $formadmin = new FormAdmin($db);
 
-$arrayofjs = array('/inclusions/jquery/plugins/jquerytreeview/jquery.treeview.js', '/include/jquery/plugins/jquerytreeview/lib/jquery.cookie.js');
-$arrayofcss = array('/inclusions/jquery/plugins/jquerytreeview/jquery.treeview.css');
+$arrayofjs = array('/embarquements/jquery/plugins/jquerytreeview/jquery.treeview.js', '/include/jquery/plugins/jquerytreeview/lib/jquery.cookie.js');
+$arrayofcss = array('/embarquements/jquery/plugins/jquerytreeview/jquery.treeview.css');
 
 llxHeader('', $langs->trans("Menus"), '', '', 0, 0, $arrayofjs, $arrayofcss);
 

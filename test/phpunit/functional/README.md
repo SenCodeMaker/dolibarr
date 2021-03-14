@@ -74,4 +74,4 @@ Make sure your servers (web, database and browser automation) are started.
 
 Then from Dolibarr's root directory, run:
 
-```htdocs/inclusions/bin/phpunit test/phpunit/functional```
+```htdocs/embarquements/bin/phpunit test/phpunit/functional```

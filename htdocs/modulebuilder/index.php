@@ -1610,10 +1610,10 @@ $dirins_ok = (dol_is_dir($dirins));
 
 $help_url = '';
 $morejs = array(
-	'/inclusions/ace/src/ace.js',
-	'/inclusions/ace/src/ext-statusbar.js',
-	'/inclusions/ace/src/ext-language_tools.js',
-	//'/inclusions/ace/src/ext-chromevox.js'
+	'/embarquements/ace/src/ace.js',
+	'/embarquements/ace/src/ext-statusbar.js',
+	'/embarquements/ace/src/ext-language_tools.js',
+	//'/embarquements/ace/src/ext-chromevox.js'
 );
 $morecss = array();
 

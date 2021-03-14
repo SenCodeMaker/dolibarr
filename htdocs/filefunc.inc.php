@@ -286,25 +286,25 @@ define('MAIN_DB_PREFIX', $dolibarr_main_db_prefix);
  */
 // Path to root libraries
 if (!defined('ADODB_PATH')) {
-	define('ADODB_PATH', (!isset($dolibarr_lib_ADODB_PATH)) ?DOL_DOCUMENT_ROOT.'/inclusions/adodbtime/' : (empty($dolibarr_lib_ADODB_PATH) ? '' : $dolibarr_lib_ADODB_PATH.'/'));
+	define('ADODB_PATH', (!isset($dolibarr_lib_ADODB_PATH)) ?DOL_DOCUMENT_ROOT.'/embarquements/adodbtime/' : (empty($dolibarr_lib_ADODB_PATH) ? '' : $dolibarr_lib_ADODB_PATH.'/'));
 }
 if (!defined('TCPDF_PATH')) {
-	define('TCPDF_PATH', (empty($dolibarr_lib_TCPDF_PATH)) ?DOL_DOCUMENT_ROOT.'/inclusions/tecnickcom/tcpdf/' : $dolibarr_lib_TCPDF_PATH.'/');
+	define('TCPDF_PATH', (empty($dolibarr_lib_TCPDF_PATH)) ?DOL_DOCUMENT_ROOT.'/embarquements/tecnickcom/tcpdf/' : $dolibarr_lib_TCPDF_PATH.'/');
 }
 if (!defined('TCPDI_PATH')) {
-	define('TCPDI_PATH', (empty($dolibarr_lib_TCPDI_PATH)) ?DOL_DOCUMENT_ROOT.'/inclusions/tcpdi/' : $dolibarr_lib_TCPDI_PATH.'/');
+	define('TCPDI_PATH', (empty($dolibarr_lib_TCPDI_PATH)) ?DOL_DOCUMENT_ROOT.'/embarquements/tcpdi/' : $dolibarr_lib_TCPDI_PATH.'/');
 }
 if (!defined('NUSOAP_PATH')) {
-	define('NUSOAP_PATH', (!isset($dolibarr_lib_NUSOAP_PATH)) ?DOL_DOCUMENT_ROOT.'/inclusions/nusoap/lib/' : (empty($dolibarr_lib_NUSOAP_PATH) ? '' : $dolibarr_lib_NUSOAP_PATH.'/'));
+	define('NUSOAP_PATH', (!isset($dolibarr_lib_NUSOAP_PATH)) ?DOL_DOCUMENT_ROOT.'/embarquements/nusoap/lib/' : (empty($dolibarr_lib_NUSOAP_PATH) ? '' : $dolibarr_lib_NUSOAP_PATH.'/'));
 }
 if (!defined('PHPEXCELNEW_PATH')) {
-	define('PHPEXCELNEW_PATH', (!isset($dolibarr_lib_PHPEXCELNEW_PATH)) ?DOL_DOCUMENT_ROOT.'/inclusions/phpoffice/PhpSpreadsheet/' : (empty($dolibarr_lib_PHPEXCELNEW_PATH) ? '' : $dolibarr_lib_PHPEXCELNEW_PATH.'/'));
+	define('PHPEXCELNEW_PATH', (!isset($dolibarr_lib_PHPEXCELNEW_PATH)) ?DOL_DOCUMENT_ROOT.'/embarquements/phpoffice/PhpSpreadsheet/' : (empty($dolibarr_lib_PHPEXCELNEW_PATH) ? '' : $dolibarr_lib_PHPEXCELNEW_PATH.'/'));
 }
 if (!defined('ODTPHP_PATH')) {
-	define('ODTPHP_PATH', (!isset($dolibarr_lib_ODTPHP_PATH)) ?DOL_DOCUMENT_ROOT.'/inclusions/odtphp/' : (empty($dolibarr_lib_ODTPHP_PATH) ? '' : $dolibarr_lib_ODTPHP_PATH.'/'));
+	define('ODTPHP_PATH', (!isset($dolibarr_lib_ODTPHP_PATH)) ?DOL_DOCUMENT_ROOT.'/embarquements/odtphp/' : (empty($dolibarr_lib_ODTPHP_PATH) ? '' : $dolibarr_lib_ODTPHP_PATH.'/'));
 }
 if (!defined('ODTPHP_PATHTOPCLZIP')) {
-	define('ODTPHP_PATHTOPCLZIP', (!isset($dolibarr_lib_ODTPHP_PATHTOPCLZIP)) ?DOL_DOCUMENT_ROOT.'/inclusions/odtphp/zip/pclzip/' : (empty($dolibarr_lib_ODTPHP_PATHTOPCLZIP) ? '' : $dolibarr_lib_ODTPHP_PATHTOPCLZIP.'/'));
+	define('ODTPHP_PATHTOPCLZIP', (!isset($dolibarr_lib_ODTPHP_PATHTOPCLZIP)) ?DOL_DOCUMENT_ROOT.'/embarquements/odtphp/zip/pclzip/' : (empty($dolibarr_lib_ODTPHP_PATHTOPCLZIP) ? '' : $dolibarr_lib_ODTPHP_PATHTOPCLZIP.'/'));
 }
 if (!defined('JS_CKEDITOR')) {
 	define('JS_CKEDITOR', (!isset($dolibarr_js_CKEDITOR)) ? '' : (empty($dolibarr_js_CKEDITOR) ? '' : $dolibarr_js_CKEDITOR.'/'));
@@ -317,10 +317,10 @@ if (!defined('JS_JQUERY_UI')) {
 }
 // Other required path
 if (!defined('DOL_DEFAULT_TTF')) {
-	define('DOL_DEFAULT_TTF', (!isset($dolibarr_font_DOL_DEFAULT_TTF)) ?DOL_DOCUMENT_ROOT.'/inclusions/fonts/Aerial.ttf' : (empty($dolibarr_font_DOL_DEFAULT_TTF) ? '' : $dolibarr_font_DOL_DEFAULT_TTF));
+	define('DOL_DEFAULT_TTF', (!isset($dolibarr_font_DOL_DEFAULT_TTF)) ?DOL_DOCUMENT_ROOT.'/embarquements/fonts/Aerial.ttf' : (empty($dolibarr_font_DOL_DEFAULT_TTF) ? '' : $dolibarr_font_DOL_DEFAULT_TTF));
 }
 if (!defined('DOL_DEFAULT_TTF_BOLD')) {
-	define('DOL_DEFAULT_TTF_BOLD', (!isset($dolibarr_font_DOL_DEFAULT_TTF_BOLD)) ?DOL_DOCUMENT_ROOT.'/inclusions/fonts/AerialBd.ttf' : (empty($dolibarr_font_DOL_DEFAULT_TTF_BOLD) ? '' : $dolibarr_font_DOL_DEFAULT_TTF_BOLD));
+	define('DOL_DEFAULT_TTF_BOLD', (!isset($dolibarr_font_DOL_DEFAULT_TTF_BOLD)) ?DOL_DOCUMENT_ROOT.'/embarquements/fonts/AerialBd.ttf' : (empty($dolibarr_font_DOL_DEFAULT_TTF_BOLD) ? '' : $dolibarr_font_DOL_DEFAULT_TTF_BOLD));
 }
 
 

@@ -1,17 +1,17 @@
 # Remove warning, we want to keep both standard and minified sources.
-dolibarr: source-contains-prebuilt-javascript-object htdocs/inclusions/jquery/*
-dolibarr: source-contains-prebuilt-javascript-object htdocs/inclusions/jsgantt/*
-dolibarr: source-contains-prebuilt-javascript-object htdocs/inclusions/jstz/*
+dolibarr: source-contains-prebuilt-javascript-object htdocs/embarquements/jquery/*
+dolibarr: source-contains-prebuilt-javascript-object htdocs/embarquements/jsgantt/*
+dolibarr: source-contains-prebuilt-javascript-object htdocs/embarquements/jstz/*
 # Those are false positives, the files are their own sources since
 # they are not minified
-source-is-missing htdocs/inclusions/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/*.js
-source-is-missing htdocs/inclusions/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/*.js
-source-is-missing htdocs/inclusions/ckeditor/ckeditor/lang/*.js
-source-is-missing htdocs/inclusions/ckeditor/ckeditor/plugins/*/dialogs/*.js
-source-is-missing htdocs/inclusions/ckeditor/ckeditor/plugins/*/filter/*.js
-source-is-missing htdocs/inclusions/ckeditor/ckeditor/plugins/templates/templates/default.js
-source-is-missing htdocs/inclusions/restler/framework/Luracast/Restler/explorer/lib/*.js
+source-is-missing htdocs/embarquements/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/*.js
+source-is-missing htdocs/embarquements/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/*.js
+source-is-missing htdocs/embarquements/ckeditor/ckeditor/lang/*.js
+source-is-missing htdocs/embarquements/ckeditor/ckeditor/plugins/*/dialogs/*.js
+source-is-missing htdocs/embarquements/ckeditor/ckeditor/plugins/*/filter/*.js
+source-is-missing htdocs/embarquements/ckeditor/ckeditor/plugins/templates/templates/default.js
+source-is-missing htdocs/embarquements/restler/framework/Luracast/Restler/explorer/lib/*.js
 # Those are false positives, the files are their own sources since
 # they are data files
-source-is-missing htdocs/inclusions/mobiledetect/mobiledetectlib/Mobile_Detect.json
+source-is-missing htdocs/embarquements/mobiledetect/mobiledetectlib/Mobile_Detect.json
 

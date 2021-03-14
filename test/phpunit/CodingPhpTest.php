@@ -175,7 +175,7 @@ class CodingPhpTest extends PHPUnit\Framework\TestCase
 		//$filesarray = dol_dir_list(DOL_DOCUMENT_ROOT, 'files', 1, '\.php', null, 'fullname');
 
 		foreach ($filesarray as $key => $file) {
-			if (preg_match('/\/htdocs\/inclusions\//', $file['fullname'])) {
+			if (preg_match('/\/htdocs\/embarquements\//', $file['fullname'])) {
 				continue;
 			}
 			if (preg_match('/\/htdocs\/custom\//', $file['fullname'])) {
