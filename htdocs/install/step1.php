@@ -49,11 +49,13 @@ $userroot = GETPOST('db_user_root', 'alpha') ?GETPOST('db_user_root', 'alpha') :
 $passroot = GETPOST('db_pass_root', 'none') ?GETPOST('db_pass_root', 'none') : (empty($argv[7]) ? '' : $argv[7]);
 // Database server
 error_log(GETPOST('db_type', 'none'));
+error_log(GETPOST('db_type', 'aZ09'));
 error_log('-----------------------\n');
 error_log('-----------------------\n');
 error_log('-----------------------\n');
 error_log('-----------------------\n');
 error_log('-----------------------\n');
+error_log(print_r($argv[8],true));
 error_log(print_r($argv,true));
 $db_type = GETPOST('db_type', 'aZ09') ?GETPOST('db_type', 'aZ09') : (empty($argv[8]) ? '' : $argv[8]);
 $db_host = GETPOST('db_host', 'alpha') ?GETPOST('db_host', 'alpha') : (empty($argv[9]) ? '' : $argv[9]);
