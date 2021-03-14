@@ -100,6 +100,9 @@ if (!defined('DONOTLOADCONF') && file_exists($conffile) && filesize($conffile) >
 		$dolibarr_main_document_root    = isset($dolibarr_main_document_root) ?trim($dolibarr_main_document_root) : '';
 		$dolibarr_main_document_root_alt = isset($dolibarr_main_document_root_alt) ?trim($dolibarr_main_document_root_alt) : '';
 
+	error_log($dolibarr_main_document_root);
+error_log('//////////////////////\n');
+
 		// Remove last / or \ on directories or url value
 		if (!empty($dolibarr_main_document_root) && !preg_match('/^[\\/]+$/', $dolibarr_main_document_root))		$dolibarr_main_document_root = preg_replace('/[\\/]+$/', '', $dolibarr_main_document_root);
 		if (!empty($dolibarr_main_url_root) && !preg_match('/^[\\/]+$/', $dolibarr_main_url_root))			$dolibarr_main_url_root = preg_replace('/[\\/]+$/', '', $dolibarr_main_url_root);
@@ -110,6 +113,8 @@ if (!defined('DONOTLOADCONF') && file_exists($conffile) && filesize($conffile) >
 		// Create conf object
 		if (!empty($dolibarr_main_document_root))
 		{
+			error_log($dolibarr_main_document_root);
+error_log('//////////////////////\n');
 			$result = conf($dolibarr_main_document_root);
 		}
 		// Load database driver
