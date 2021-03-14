@@ -269,6 +269,9 @@ function conf($dolibarr_main_document_root)
 	global $dolibarr_main_db_user;
 	global $dolibarr_main_db_pass;
 	global $character_set_client;
+	
+	error_log($dolibarr_main_document_root);
+error_log('*************************\n');
 
 	$return = include_once $dolibarr_main_document_root.'/core/class/conf.class.php';
 	if (!$return) return -1;
