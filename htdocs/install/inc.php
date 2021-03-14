@@ -505,17 +505,26 @@ function detect_dolibarr_main_document_root()
 	if ($_SERVER["SCRIPT_FILENAME"] == 'php' || preg_match('/[\\/]php$/i', $_SERVER["SCRIPT_FILENAME"]) || preg_match('/php\.exe$/i', $_SERVER["SCRIPT_FILENAME"]))
 	{
 		$dolibarr_main_document_root = $_SERVER["DOCUMENT_ROOT"];
+		error_log($dolibarr_main_document_root);
+		error_log('1-detectedetdtecettedc \n');
 
 		if (!preg_match('/[\\/]dolibarr[\\/]htdocs$/i', $dolibarr_main_document_root)) {
 			$dolibarr_main_document_root .= "/dolibarr/htdocs";
 		}
+		error_log($dolibarr_main_document_root);
+		error_log('2-detectedetdtecettedc \n');
 	} else {
 		// We assume /install to be under /htdocs, so we get the parent directory of the current directory
 		$dolibarr_main_document_root = dirname(dirname($_SERVER["SCRIPT_FILENAME"]));
+		error_log($dolibarr_main_document_root);
+		error_log('3-detectedetdtecettedc \n');
 	}
+	
+	error_log($dolibarr_main_document_root);
+	error_log('f-detectedetdtecettedc \n');
 
 	return $dolibarr_main_document_root;
-}
+f
 
 /**
  * Automatically detect Dolibarr's main data root
