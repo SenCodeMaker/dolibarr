@@ -218,8 +218,8 @@ if ($elemid && $action == 'addintocategory' &&
 $form = new Form($db);
 $formother = new FormOther($db);
 
-$arrayofjs = array('/includes/jquery/plugins/jquerytreeview/jquery.treeview.js', '/includes/jquery/plugins/jquerytreeview/lib/jquery.cookie.js');
-$arrayofcss = array('/includes/jquery/plugins/jquerytreeview/jquery.treeview.css');
+$arrayofjs = array('/static/jquery/plugins/jquerytreeview/jquery.treeview.js', '/static/jquery/plugins/jquerytreeview/lib/jquery.cookie.js');
+$arrayofcss = array('/static/jquery/plugins/jquerytreeview/jquery.treeview.css');
 $helpurl = '';
 llxHeader("", $langs->trans("Categories"), $helpurl, '', 0, 0, $arrayofjs, $arrayofcss);
 

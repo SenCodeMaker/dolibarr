@@ -62,8 +62,8 @@ else {
 	$title = $langs->trans(ucfirst($type).'sCategoriesArea');
 }
 
-$arrayofjs = array('/includes/jquery/plugins/jquerytreeview/jquery.treeview.js', '/includes/jquery/plugins/jquerytreeview/lib/jquery.cookie.js');
-$arrayofcss = array('/includes/jquery/plugins/jquerytreeview/jquery.treeview.css');
+$arrayofjs = array('/static/jquery/plugins/jquerytreeview/jquery.treeview.js', '/static/jquery/plugins/jquerytreeview/lib/jquery.cookie.js');
+$arrayofcss = array('/static/jquery/plugins/jquerytreeview/jquery.treeview.css');
 
 llxHeader('', $title, '', '', 0, 0, $arrayofjs, $arrayofcss);
 

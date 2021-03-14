@@ -294,8 +294,8 @@ $moreheadcss = '';
 $moreheadjs = '';
 
 //$morejs=array();
-$morejs = array('includes/jquery/plugins/blockUI/jquery.blockUI.js', 'core/js/blockUI.js'); // Used by ecm/tpl/enabledfiletreeajax.tpl.pgp
-if (empty($conf->global->MAIN_ECM_DISABLE_JS)) $morejs[] = "includes/jquery/plugins/jqueryFileTree/jqueryFileTree.js";
+$morejs = array('static/jquery/plugins/blockUI/jquery.blockUI.js', 'core/js/blockUI.js'); // Used by ecm/tpl/enabledfiletreeajax.tpl.pgp
+if (empty($conf->global->MAIN_ECM_DISABLE_JS)) $morejs[] = "static/jquery/plugins/jqueryFileTree/jqueryFileTree.js";
 
 $moreheadjs .= '<script type="text/javascript">'."\n";
 $moreheadjs .= 'var indicatorBlockUI = \''.DOL_URL_ROOT."/theme/".$conf->theme."/img/working.gif".'\';'."\n";

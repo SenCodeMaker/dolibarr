@@ -2262,16 +2262,16 @@ $arrayofjs = array(
 	'/includes/ace/src/ext-statusbar.js',
 	'/includes/ace/src/ext-language_tools.js',
 	//'/includes/ace/src/ext-chromevox.js'
-	//'/includes/jquery/plugins/jqueryscoped/jquery.scoped.js',
+	//'/static/jquery/plugins/jqueryscoped/jquery.scoped.js',
 );
 $arrayofcss = array();
 
 $moreheadcss = '';
 $moreheadjs = '';
 
-$arrayofjs[] = 'includes/jquery/plugins/blockUI/jquery.blockUI.js';
+$arrayofjs[] = 'static/jquery/plugins/blockUI/jquery.blockUI.js';
 $arrayofjs[] = 'core/js/blockUI.js'; // Used by ecm/tpl/enabledfiletreeajax.tpl.php
-if (empty($conf->global->MAIN_ECM_DISABLE_JS)) $arrayofjs[] = "includes/jquery/plugins/jqueryFileTree/jqueryFileTree.js";
+if (empty($conf->global->MAIN_ECM_DISABLE_JS)) $arrayofjs[] = "static/jquery/plugins/jqueryFileTree/jqueryFileTree.js";
 
 $moreheadjs .= '<script type="text/javascript">'."\n";
 $moreheadjs .= 'var indicatorBlockUI = \''.DOL_URL_ROOT."/theme/".$conf->theme."/img/working.gif".'\';'."\n";

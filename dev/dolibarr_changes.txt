@@ -222,7 +222,7 @@ JCROP:
 
 JQUERYFILETREE:
 ---------------
-* Remove directory htdocs/includes/jquery/plugins/jqueryFileTree/connectors
+* Remove directory htdocs/static/jquery/plugins/jqueryFileTree/connectors
 
 
 RESTLER:

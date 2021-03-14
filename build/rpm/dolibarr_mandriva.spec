@@ -103,7 +103,7 @@ cui hai bisogno ed essere facile da usare.
 %{__cp} -pr htdocs  $RPM_BUILD_ROOT%{_datadir}/%{name}
 %{__cp} -pr scripts $RPM_BUILD_ROOT%{_datadir}/%{name}
 %{__rm} -rf $RPM_BUILD_ROOT%{_datadir}/%{name}/htdocs/includes/ckeditor/_source  
-%{__rm} -rf $RPM_BUILD_ROOT%{_datadir}/%{name}/htdocs/includes/fonts
+%{__rm} -rf $RPM_BUILD_ROOT%{_datadir}/%{name}/htdocs/static/fonts
 
 # Lang
 echo "%defattr(0644, root, root, 0755)" > %{name}.lang

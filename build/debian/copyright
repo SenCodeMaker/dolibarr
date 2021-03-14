@@ -118,7 +118,7 @@ Comment:
 
 ------------------------------------------------------------
 
-Files: htdocs/includes/fonts/*
+Files: htdocs/static/fonts/*
 Copyright: 2003, Bitstream Inc
 	   unknown, Gavin Graham
 License: other
@@ -215,7 +215,7 @@ License: CC-By-SA
 
 ------------------------------------------------------------
 
-Files: htdocs/includes/jquery/*
+Files: htdocs/static/jquery/*
 Copyright: JQuery team
 https://www.jquery.com
 License: GPL-2+ or MIT
@@ -267,7 +267,7 @@ Comment:
 
 ------------------------------------------------------------
 
-Files: htdocs/includes/jquery/plugins/flot/*
+Files: htdocs/static/jquery/plugins/flot/*
 Copyright: Flot team
 License: Public-Domain
  This work is not subject to copyright in any jurisdiction

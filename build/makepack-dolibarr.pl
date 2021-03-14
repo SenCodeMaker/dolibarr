@@ -601,8 +601,8 @@ if ($nboftargetok) {
         $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/includes/ckeditor/_source`;					# _source must be kept into tarball for official debian, not for the rest
         $ret=`rm -f  $BUILDROOT/$PROJECT/htdocs/includes/composer`;
         $ret=`rm -f  $BUILDROOT/$PROJECT/htdocs/includes/doctrine`;
-        $ret=`rm -f  $BUILDROOT/$PROJECT/htdocs/includes/jquery/plugins/multiselect/MIT-LICENSE.txt`;
-        $ret=`rm -f  $BUILDROOT/$PROJECT/htdocs/includes/jquery/plugins/select2/release.sh`;
+        $ret=`rm -f  $BUILDROOT/$PROJECT/htdocs/static/jquery/plugins/multiselect/MIT-LICENSE.txt`;
+        $ret=`rm -f  $BUILDROOT/$PROJECT/htdocs/static/jquery/plugins/select2/release.sh`;
         $ret=`rm -fr $BUILDROOT/$PROJECT/htdocs/includes/mike42/escpos-php/doc`;
         $ret=`rm -f  $BUILDROOT/$PROJECT/htdocs/includes/mike42/escpos-php/example`;
         $ret=`rm -f  $BUILDROOT/$PROJECT/htdocs/includes/mike42/escpos-php/test`;
@@ -939,13 +939,13 @@ if ($nboftargetok) {
 			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/includes/ckeditor/ckeditor/plugins/scayt/LICENSE.md`;
 			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/includes/ckeditor/ckeditor/plugins/wsc/LICENSE.md`;
 			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/includes/php-iban/LICENSE`;
-			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/includes/jquery/plugins/flot/LICENSE.txt`;
-			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/includes/jquery/plugins/datatables/extensions/ColReorder/License.txt`;
-			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/includes/jquery/plugins/datatables/extensions/ColVis/License.txt`;
-			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/includes/jquery/plugins/datatables/extensions/FixedColumns/License.txt`;
-			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/includes/jquery/plugins/datatables/extensions/Responsive/License.txt`;
-			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/includes/jquery/plugins/datatables/license.txt`;
-			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/includes/jquery/plugins/select2/LICENSE`;
+			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/static/jquery/plugins/flot/LICENSE.txt`;
+			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/static/jquery/plugins/datatables/extensions/ColReorder/License.txt`;
+			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/static/jquery/plugins/datatables/extensions/ColVis/License.txt`;
+			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/static/jquery/plugins/datatables/extensions/FixedColumns/License.txt`;
+			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/static/jquery/plugins/datatables/extensions/Responsive/License.txt`;
+			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/static/jquery/plugins/datatables/license.txt`;
+			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/static/jquery/plugins/select2/LICENSE`;
 			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/includes/mike42/escpos-php/LICENSE.md`;
 			$ret=`rm -fr $BUILDROOT/$PROJECT.tmp/htdocs/includes/mobiledetect/mobiledetectlib/LICENSE.txt`;
 			

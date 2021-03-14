@@ -95,22 +95,22 @@ override_dh_install:
 #	rm -fr htdocs/includes/odtphp/zip/pclzip
 	# clean from all JS-CSS embedded libraries (we use package dependencies instead)
 #	rm -fr htdocs/includes/ckeditor
-#	rm -fr htdocs/includes/jquery/js
-#	rm -fr htdocs/includes/jquery/css
-#	rm -fr htdocs/includes/jquery/plugins/flot
+#	rm -fr htdocs/static/jquery/js
+#	rm -fr htdocs/static/jquery/css
+#	rm -fr htdocs/static/jquery/plugins/flot
 	# clean from all embedded fonts (we use package dependencies instead)
-#	rm -fr htdocs/includes/fonts
+#	rm -fr htdocs/static/fonts
 
 	# clean from useless files
-	rm -fr htdocs/includes/jquery/plugins/multiselect
+	rm -fr htdocs/static/jquery/plugins/multiselect
 	rm -fr htdocs/includes/tcpdf/fonts/dejavu-fonts-ttf-2.33
 	rm -fr htdocs/includes/tcpdf/fonts/freefont-20100919
 	rm -fr htdocs/includes/tcpdf/fonts/utils
 	# clean from files to avoid warning of missing dependencies
-	rm -fr htdocs/includes/jquery/plugins/jqueryFileTree/connectors/jqueryFileTree.py
+	rm -fr htdocs/static/jquery/plugins/jqueryFileTree/connectors/jqueryFileTree.py
 
 	# Licence files are already included into copyright file.
-	rm -f  htdocs/includes/jquery/plugins/flot/LICENSE.txt
+	rm -f  htdocs/static/jquery/plugins/flot/LICENSE.txt
 	rm -f  htdocs/includes/tcpdf/LICENSE.TXT
 
 	# Drop unwanted executable permissions

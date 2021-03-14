@@ -170,13 +170,13 @@ cui hai bisogno ed essere facile da usare.
 %if 0%{?fedora} || 0%{?rhel_version} || 0%{?centos_version}
 %{__rm} -rf $RPM_BUILD_ROOT%{_datadir}/%{name}/htdocs/includes/adodbtime  
 %{__rm} -rf $RPM_BUILD_ROOT%{_datadir}/%{name}/htdocs/includes/nusoap
-%{__rm} -rf $RPM_BUILD_ROOT%{_datadir}/%{name}/htdocs/includes/fonts
+%{__rm} -rf $RPM_BUILD_ROOT%{_datadir}/%{name}/htdocs/static/fonts
 %else
 %if 0%{?mdkversion}
-%{__rm} -rf $RPM_BUILD_ROOT%{_datadir}/%{name}/htdocs/includes/fonts
+%{__rm} -rf $RPM_BUILD_ROOT%{_datadir}/%{name}/htdocs/static/fonts
 %else
 %if 0%{?suse_version}
-%{__rm} -rf $RPM_BUILD_ROOT%{_datadir}/%{name}/htdocs/includes/fonts
+%{__rm} -rf $RPM_BUILD_ROOT%{_datadir}/%{name}/htdocs/static/fonts
 %endif
 %endif
 %endif
