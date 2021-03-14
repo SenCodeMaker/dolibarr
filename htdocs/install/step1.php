@@ -48,6 +48,13 @@ $main_url = GETPOST('main_url') ?GETPOST('main_url') : (empty($argv[5]) ? '' : $
 $userroot = GETPOST('db_user_root', 'alpha') ?GETPOST('db_user_root', 'alpha') : (empty($argv[6]) ? '' : $argv[6]);
 $passroot = GETPOST('db_pass_root', 'none') ?GETPOST('db_pass_root', 'none') : (empty($argv[7]) ? '' : $argv[7]);
 // Database server
+error_log(GETPOST('db_type', 'none'));
+error_log('-----------------------\n');
+error_log('-----------------------\n');
+error_log('-----------------------\n');
+error_log('-----------------------\n');
+error_log('-----------------------\n');
+error_log(print_r($argv,true));
 $db_type = GETPOST('db_type', 'aZ09') ?GETPOST('db_type', 'aZ09') : (empty($argv[8]) ? '' : $argv[8]);
 $db_host = GETPOST('db_host', 'alpha') ?GETPOST('db_host', 'alpha') : (empty($argv[9]) ? '' : $argv[9]);
 $db_name = GETPOST('db_name', 'aZ09') ?GETPOST('db_name', 'aZ09') : (empty($argv[10]) ? '' : $argv[10]);
