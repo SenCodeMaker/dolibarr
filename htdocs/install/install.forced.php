@@ -31,13 +31,13 @@ $force_install_main_data_root = null;
 $force_install_mainforcehttps = true;
 
 /** @var string Database name */
-$force_install_database = 'd3qeub390vv4aq';
+$force_install_database = '';
 
 /** @var string Database driver (mysql|mysqli|pgsql|mssql|sqlite|sqlite3) */
-$force_install_type = 'pgsql';
+$force_install_type = '';
 
 /** @var string Database server host */
-$force_install_dbserver = 'ec2-54-220-35-19.eu-west-1.compute.amazonaws.com';
+$force_install_dbserver = '';
 
 /** @var int Database server port */
 $force_install_port = 5432;
@@ -49,10 +49,10 @@ $force_install_prefix = 'llx_';
 $force_install_createdatabase = true;
 
 /** @var string Database username */
-$force_install_databaselogin = 'hwztjnlcoguzyg';
+$force_install_databaselogin = '';
 
 /** @var string Database password */
-$force_install_databasepass = 'db31a453397b5aef1039c6fe7422c184c6896e4d3eb7eb91c30cf32d0c5a92d1';
+$force_install_databasepass = '';
 
 /** @var bool Force database user creation */
 $force_install_createuser = false;
