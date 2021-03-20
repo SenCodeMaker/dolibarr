@@ -77,8 +77,8 @@ $conffiletoshow = "htdocs/conf/conf.php";
 //$conffile = "/etc/dolibarr/conf.php";
 //$conffiletoshow = "/etc/dolibarr/conf.php";
 
-error_log(!defined('DONOTLOADCONF') && file_exists($conffile) && filesize($conffile) > 8);
-error_log(!defined('DONOTLOADCONF'));
+error_log(!defined('DONOTLOADCONF') == true && file_exists($conffile) && filesize($conffile) > 8);
+error_log(!defined('DONOTLOADCONF') == true);
 error_log(file_exists($conffile));
 error_log(filesize($conffile) > 8);
 error_log(include_once $conffile);
