@@ -237,6 +237,7 @@ error_log('-----------------------\n');
 error_log('-----------------------\n');
 error_log('-----------------------\n');
 error_log($dolibarr_main_document_root);
+error_log($main_dir);
 error_log('pppppppppppppppppppppppp\n');
 
 // Test database connection
@@ -558,6 +559,7 @@ if (!$error && $db->connected && $action == "set")
 	if (!$error)
 	{
 	    error_log($dolibarr_main_document_root);
+	    error_log($main_dir);
 	    error_log('#######################22#\n');
 		// We reload configuration file
 		conf($dolibarr_main_document_root);
@@ -1036,6 +1038,7 @@ function write_conf_file($conffile)
 		if (file_exists("$conffile"))
 		{
 		    error_log($dolibarr_main_document_root);
+		    error_log($main_dir);
 		    error_log('########################\n');
 		    error_log($conffile);
 			include $conffile; // force config reload, do not put include_once
