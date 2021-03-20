@@ -1042,7 +1042,7 @@ function write_conf_file($conffile)
 		    error_log('########################\n');
 		    error_log($conffile);
 			include $conffile; // force config reload, do not put include_once
-			conf($dolibarr_main_document_root);
+			conf($main_dir);
 
 			print "<tr><td>";
 			print $langs->trans("SaveConfigurationFile");
