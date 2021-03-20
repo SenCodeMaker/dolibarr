@@ -369,6 +369,9 @@ if (!$error && $db->connected)
 // Create config file
 if (!$error && $db->connected && $action == "set")
 {
+    
+    error_log($dolibarr_main_document_root);
+    error_log('pppppppppppppppppppppppp\n');
 	umask(0);
 	if (is_array($_POST))
 	{
@@ -540,7 +543,8 @@ if (!$error && $db->connected && $action == "set")
 			// Also no other process must be able to read file or we expose the new file, so content with password.
 			@dol_copy($conffile, $conffile.'.old', '0400');
 		}
-
+		error_log($dolibarr_main_document_root);
+		error_log('wwwwwwwwwwwwwwwww\n');
 		$error += write_conf_file($conffile);
 	}
 
