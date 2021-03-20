@@ -169,6 +169,8 @@ if (!empty($dolibarr_main_document_root_alt))
 	}
 }
 
+error_log($dolibarr_main_document_root);
+error_log("inininiini");
 
 // Security check (old method, when directory is renamed /install.lock)
 if (preg_match('/install\.lock/i', $_SERVER["SCRIPT_FILENAME"]))
@@ -257,7 +259,8 @@ $langs = new Translate('..', $conf);
 if (GETPOST('lang', 'aZ09')) $langs->setDefaultLang(GETPOST('lang', 'aZ09'));
 else $langs->setDefaultLang('auto');
 
-
+error_log($dolibarr_main_document_root);
+error_log("defcrtbvtgvrtvcrty");
 /**
  * Load conf file (file must exists)
  *
@@ -521,7 +524,7 @@ function detect_dolibarr_main_document_root()
 	}
 	
 	error_log($dolibarr_main_document_root);
-	error_log('1-detectedetdtecettedc \n');
+	error_log('f-detectedetdtecettedc \n');
 
 	return $dolibarr_main_document_root;
 }
