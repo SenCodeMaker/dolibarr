@@ -88,14 +88,14 @@ if ($conffile == "/etc/dolibarr/conf.php") $forcedfile = "/etc/dolibarr/install.
 if (@file_exists($forcedfile)) {
 	$useforcedwizard = true;
 	include_once $forcedfile;
+	error_log($dolibarr_main_document_root);
+	error_log('mainnnnnnnnnnnn\n');
 	// If forced install is enabled, replace the post values. These are empty because form fields are disabled.
 	if ($force_install_noedit) {
 		$main_dir = detect_dolibarr_main_document_root();
-		error_log($main_dir);
+		error_log($dolibarr_main_document_root);
 		error_log('mainnnnnnnnnnnn\n');
 		if (!empty($argv[1])) $main_dir = $argv[1]; // override when executing the script in command line
-		error_log($main_dir);
-		error_log('argggggggggggggggg\n');
 		if (!empty($force_install_main_data_root)) {
 			$main_data_dir = $force_install_main_data_root;
 		} else {
@@ -110,6 +110,8 @@ if (@file_exists($forcedfile)) {
 			$passroot = parse_database_pass($force_install_databaserootpass);
 		}
 	}
+	error_log($dolibarr_main_document_root);
+	error_log('mainnnnnnnnnnnn\n');
 	if ($force_install_noedit == 2) {
 		if (!empty($force_install_type)) {
 			$db_type = $force_install_type;
@@ -562,7 +564,7 @@ if (!$error && $db->connected && $action == "set")
 	    error_log($main_dir);
 	    error_log('#######################22#\n');
 		// We reload configuration file
-		conf($dolibarr_main_document_root);
+	    conf($main_dir);
 
 		print '<tr><td>';
 		print $langs->trans("ConfFileReload");
