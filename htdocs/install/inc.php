@@ -85,7 +85,7 @@ error_log(include_once $conffile);
 
 
 // Load conf file if it is already defined
-if (!defined('DONOTLOADCONF') && file_exists($conffile) && filesize($conffile) > 8) // Test on filesize is to ensure that conf file is more that an empty template with just <?php in first line
+if (!defined('DONOTLOADCONF') == true && file_exists($conffile) && filesize($conffile) > 8) // Test on filesize is to ensure that conf file is more that an empty template with just <?php in first line
 {
 	$result = include_once $conffile; // Load conf file
 	if ($result)
