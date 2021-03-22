@@ -560,7 +560,7 @@ if (!$error && $db->connected && $action == "set")
 	    error_log($main_dir);
 	    error_log('#######################22#\n');
 		// We reload configuration file
-	    conf($main_dir);
+	    conf($dolibarr_main_document_root);
 
 		print '<tr><td>';
 		print $langs->trans("ConfFileReload");
@@ -1040,7 +1040,7 @@ function write_conf_file($conffile)
 		    error_log('########################\n');
 		    error_log($conffile);
 			include $conffile; // force config reload, do not put include_once
-			conf($main_dir);
+			conf($dolibarr_main_document_root);
 
 			print "<tr><td>";
 			print $langs->trans("SaveConfigurationFile");
