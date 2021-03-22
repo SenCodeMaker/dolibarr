@@ -54,16 +54,6 @@ include_once DOL_DOCUMENT_ROOT.'/core/lib/json.lib.php';
  */
 function getDoliDBInstance($type, $host, $user, $pass, $name, $port)
 {
-error_log($type);
-error_log($host);
-error_log($port);
-error_log($name);
-error_log('-----------------------\n');
-error_log('-----------------------\n');
-error_log('-----------------------\n');
-error_log('-----------------------\n');
-error_log('-----------------------\n');
-
 	require_once DOL_DOCUMENT_ROOT."/core/db/".$type.'.class.php';
 
 	$class = 'DoliDB'.ucfirst($type);

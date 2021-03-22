@@ -29,8 +29,8 @@
 define('DONOTLOADCONF', 1); // To avoid loading conf by file inc.php
 
 include 'inc.php';
-error_log($dolibarr_main_document_root);
-error_log("adadadada");
+error_log("doc main root :".$dolibarr_main_document_root);
+error_log("juste aprés include step1 : inc.php");
 
 global $langs;
 
@@ -59,15 +59,6 @@ $db_port = GETPOST('db_port', 'int') ?GETPOST('db_port', 'int') : (empty($argv[1
 $db_prefix = GETPOST('db_prefix', 'aZ09') ?GETPOST('db_prefix', 'aZ09') : (empty($argv[14]) ? '' : $argv[14]);
 $db_create_database = GETPOST('db_create_database', 'alpha') ?GETPOST('db_create_database', 'alpha') : (empty($argv[15]) ? '' : $argv[15]);
 $db_create_user = GETPOST('db_create_user', 'alpha') ?GETPOST('db_create_user', 'alpha') : (empty($argv[16]) ? '' : $argv[16]);
-error_log($db_type);
-error_log($db_host);
-error_log($db_port);
-error_log($db_name);
-error_log('-----------------------\n');
-error_log('-----------------------\n');
-error_log('-----------------------\n');
-error_log('-----------------------\n');
-error_log('-----------------------\n');
 // Force https
 $main_force_https = ((GETPOST("main_force_https", 'alpha') && (GETPOST("main_force_https", 'alpha') == "on" || GETPOST("main_force_https", 'alpha') == 1)) ? '1' : '0');
 // Use alternative directory
@@ -160,17 +151,6 @@ if (@file_exists($forcedfile)) {
 
 $error = 0;
 
-error_log($db_type);
-error_log($db_host);
-error_log($db_port);
-error_log($db_name);
-error_log('-----------------------\n');
-error_log('-----------------------\n');
-error_log('-----------------------\n');
-error_log('-----------------------\n');
-error_log('-----------------------\n');
-
-
 /*
  *	View
  */
@@ -236,18 +216,9 @@ if (!empty($main_url) && substr($main_url, dol_strlen($main_url) - 1) == "/")
 	$main_url = substr($main_url, 0, dol_strlen($main_url) - 1);
 }
 
-error_log($db_type);
-error_log($db_host);
-error_log($db_port);
-error_log($db_name);
-error_log('-----------------------\n');
-error_log('-----------------------\n');
-error_log('-----------------------\n');
-error_log('-----------------------\n');
-error_log('-----------------------\n');
 error_log($dolibarr_main_document_root);
 error_log($main_dir);
-error_log('pppppppppppppppppppppppp\n');
+error_log('avant test connexion database\n');
 
 // Test database connection
 if (!$error) {
@@ -385,9 +356,6 @@ if (!$error && $db->connected)
 // Create config file
 if (!$error && $db->connected && $action == "set")
 {
-    
-    error_log($dolibarr_main_document_root);
-    error_log('pppppppppppppppppppppppp\n');
 	umask(0);
 	if (is_array($_POST))
 	{
@@ -559,17 +527,15 @@ if (!$error && $db->connected && $action == "set")
 			// Also no other process must be able to read file or we expose the new file, so content with password.
 			@dol_copy($conffile, $conffile.'.old', '0400');
 		}
-		error_log($dolibarr_main_document_root);
-		error_log('wwwwwwwwwwwwwwwww\n');
 		$error += write_conf_file($conffile);
 	}
 
 	// Create database and admin user database
 	if (!$error)
 	{
-	    error_log($dolibarr_main_document_root);
-	    error_log($main_dir);
-	    error_log('#######################22#\n');
+	    error_log("main doc root :".$dolibarr_main_document_root);
+	    error_log("main dir ".$main_dir);
+	    error_log('avant appel step1 -> inc.conf(main doc root)');
 		// We reload configuration file
 	    conf($dolibarr_main_document_root);
 
@@ -1046,9 +1012,9 @@ function write_conf_file($conffile)
 
 		if (file_exists("$conffile"))
 		{
-		    error_log($dolibarr_main_document_root);
-		    error_log($main_dir);
-		    error_log('########################\n');
+		    error_log("main doc root : ".$dolibarr_main_document_root);
+		    error_log("main dir : ".$main_dir);
+		    error_log('avant 2eme appel step1 -> inc.conf (doc main root)');
 		    error_log($conffile);
 			include $conffile; // force config reload, do not put include_once
 			conf($dolibarr_main_document_root);

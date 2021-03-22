@@ -77,13 +77,6 @@ $conffiletoshow = "htdocs/conf/conf.php";
 //$conffile = "/etc/dolibarr/conf.php";
 //$conffiletoshow = "/etc/dolibarr/conf.php";
 
-error_log(!defined('DONOTLOADCONF') == true && file_exists($conffile) && filesize($conffile) > 8);
-error_log(defined('DONOTLOADCONF') == true);
-error_log(file_exists($conffile));
-error_log(filesize($conffile) > 8);
-error_log(include_once $conffile);
-
-
 // Load conf file if it is already defined
 if (!defined('DONOTLOADCONF') == true && file_exists($conffile) && filesize($conffile) > 8) // Test on filesize is to ensure that conf file is more that an empty template with just <?php in first line
 {
@@ -106,9 +99,6 @@ if (!defined('DONOTLOADCONF') == true && file_exists($conffile) && filesize($con
 		$dolibarr_main_document_root    = isset($dolibarr_main_document_root) ?trim($dolibarr_main_document_root) : '';
 		$dolibarr_main_document_root_alt = isset($dolibarr_main_document_root_alt) ?trim($dolibarr_main_document_root_alt) : '';
 
-	error_log($dolibarr_main_document_root);
-    error_log('//////////////////////\n');
-
 		// Remove last / or \ on directories or url value
 		if (!empty($dolibarr_main_document_root) && !preg_match('/^[\\/]+$/', $dolibarr_main_document_root))		$dolibarr_main_document_root = preg_replace('/[\\/]+$/', '', $dolibarr_main_document_root);
 		if (!empty($dolibarr_main_url_root) && !preg_match('/^[\\/]+$/', $dolibarr_main_url_root))			$dolibarr_main_url_root = preg_replace('/[\\/]+$/', '', $dolibarr_main_url_root);
@@ -119,8 +109,7 @@ if (!defined('DONOTLOADCONF') == true && file_exists($conffile) && filesize($con
 		// Create conf object
 		if (!empty($dolibarr_main_document_root))
 		{
-			error_log($dolibarr_main_document_root);
-error_log('//////////////////////\n');
+		    error_log('appel inc.conf :'.$dolibarr_main_document_root);
 			$result = conf($dolibarr_main_document_root);
 		}
 		// Load database driver
@@ -174,9 +163,6 @@ if (!empty($dolibarr_main_document_root_alt))
 		$conf->file->dol_document_root[] = $value;
 	}
 }
-
-error_log($dolibarr_main_document_root);
-error_log("inininiini");
 
 // Security check (old method, when directory is renamed /install.lock)
 if (preg_match('/install\.lock/i', $_SERVER["SCRIPT_FILENAME"]))
@@ -265,8 +251,6 @@ $langs = new Translate('..', $conf);
 if (GETPOST('lang', 'aZ09')) $langs->setDefaultLang(GETPOST('lang', 'aZ09'));
 else $langs->setDefaultLang('auto');
 
-error_log($dolibarr_main_document_root);
-error_log("defcrtbvtgvrtvcrty");
 /**
  * Load conf file (file must exists)
  *
@@ -285,7 +269,7 @@ function conf($dolibarr_main_document_root)
 	global $character_set_client;
 	
 	error_log($dolibarr_main_document_root);
-error_log('*************************\n');
+error_log('Dans inc.conf juste avant lecture class.conf');
 
 	$return = include_once $dolibarr_main_document_root.'/core/class/conf.class.php';
 	if (!$return) return -1;
@@ -514,23 +498,16 @@ function detect_dolibarr_main_document_root()
 	if ($_SERVER["SCRIPT_FILENAME"] == 'php' || preg_match('/[\\/]php$/i', $_SERVER["SCRIPT_FILENAME"]) || preg_match('/php\.exe$/i', $_SERVER["SCRIPT_FILENAME"]))
 	{
 		$dolibarr_main_document_root = $_SERVER["DOCUMENT_ROOT"];
-		error_log($dolibarr_main_document_root);
-		error_log('1-detectedetdtecettedc \n');
 
 		if (!preg_match('/[\\/]dolibarr[\\/]htdocs$/i', $dolibarr_main_document_root)) {
 			$dolibarr_main_document_root .= "/dolibarr/htdocs";
 		}
-		error_log($dolibarr_main_document_root);
-		error_log('2-detectedetdtecettedc \n');
 	} else {
 		// We assume /install to be under /htdocs, so we get the parent directory of the current directory
 		$dolibarr_main_document_root = dirname(dirname($_SERVER["SCRIPT_FILENAME"]));
-		error_log($dolibarr_main_document_root);
-		error_log('3-detectedetdtecettedc \n');
 	}
 	
-	error_log($dolibarr_main_document_root);
-	error_log('f-detectedetdtecettedc \n');
+	error_log('apres dectectino inc.detectmaindocmentroot : '.$dolibarr_main_document_root);
 
 	return $dolibarr_main_document_root;
 }
