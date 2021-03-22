@@ -84,6 +84,9 @@ if (@file_exists($forcedfile)) {
 	// If forced install is enabled, replace the post values. These are empty because form fields are disabled.
 	if ($force_install_noedit) {
 		$main_dir = detect_dolibarr_main_document_root();
+		error_log("juste après detection dans step");
+		error_log("main dir : ".$main_dir);
+		error_log("main doc root : ".$dolibarr_main_document_root);
 		if (!empty($argv[1])) $main_dir = $argv[1]; // override when executing the script in command line
 		if (!empty($force_install_main_data_root)) {
 			$main_data_dir = $force_install_main_data_root;
