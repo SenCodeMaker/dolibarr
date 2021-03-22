@@ -21,7 +21,10 @@
 		"source" : "https://github.com/Dolibarr/dolibarr"
 	},
 	"config" : {
-		"vendor-dir" : "htdocs/includes"
+		"vendor-dir" : "htdocs/includes",
+		"platform": {
+			"php": "7.0.33"
+		}
 	},
 	"require" : {
 		"php" : "7.0.33",

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d8441a61aaf78aa3e805ef24dd3729fd",
-    "content-hash": "7e4fef138881f80f38c34107fcaa7439",
+    "hash": "d6ea50605bc4ae4ea1e098d5fd44b904",
+    "content-hash": "3da1b6137465597e30f74b82fbfa94d9",
     "packages": [
         {
             "name": "ckeditor/ckeditor",
@@ -481,7 +481,7 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "~1.0",
+            "version": "v1.22.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
@@ -2148,5 +2148,8 @@
         "ext-calendar": "*",
         "ext-intl": "*"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "platform-overrides": {
+        "php": "7.0.33"
+    }
 }
