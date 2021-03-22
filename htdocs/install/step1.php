@@ -109,6 +109,7 @@ if (@file_exists($forcedfile)) {
 		}
 	}
 	if ($force_install_noedit == 2) {
+	    error_log("force install");
 		if (!empty($force_install_type)) {
 			$db_type = $force_install_type;
 		}
@@ -139,6 +140,16 @@ if (@file_exists($forcedfile)) {
 		if (!empty($force_install_mainforcehttps)) {
 			$main_force_https = $force_install_mainforcehttps;
 		}
+		
+		error_log($db_type);
+		error_log($db_host);
+		error_log($db_port);
+		error_log($db_name);
+		error_log('-----------------------\n');
+		error_log('-----------------------\n');
+		error_log('-----------------------\n');
+		error_log('-----------------------\n');
+		error_log('-----------------------\n');
 	}
 
 	if (!empty($force_install_distrib)) {
