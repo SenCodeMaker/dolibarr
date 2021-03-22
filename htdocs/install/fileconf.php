@@ -144,6 +144,7 @@ if (!empty($force_install_message)) {
 <?php
 if (empty($dolibarr_main_url_root)) {
 	$dolibarr_main_document_root = detect_dolibarr_main_document_root();
+	error_log('apres dectection dans file conf : '.$dolibarr_main_document_root);
 }
 ?>
 		<td class="label">
@@ -176,6 +177,8 @@ if (!empty($force_install_noedit)) {
 		<?php
 		$dolibarr_main_data_root = @$force_install_main_data_root;
 		if (empty($dolibarr_main_data_root)) {
+		    error_log('juste avant appel à  inc.detect_dolibarr_main_data_root : '.$dolibarr_main_document_root);
+		    
 			$dolibarr_main_data_root = detect_dolibarr_main_data_root($dolibarr_main_document_root);
 		}
 		?>
