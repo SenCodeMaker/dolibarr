@@ -1017,9 +1017,12 @@ function write_conf_file($conffile)
 		{
 		    error_log("main doc root : ".$dolibarr_main_document_root);
 		    error_log("main dir : ".$main_dir);
-		    error_log('avant 2eme appel step1 -> inc.conf (doc main root)');
+		    error_log('avant include et 2eme appel step1 -> inc.conf (doc main root)');
 		    error_log($conffile);
 			include $conffile; // force config reload, do not put include_once
+			error_log("main doc root : ".$dolibarr_main_document_root);
+			error_log("main dir : ".$main_dir);
+			error_log('juste 2eme appel step1 -> inc.conf (doc main root)');
 			conf($dolibarr_main_document_root);
 
 			print "<tr><td>";
