@@ -96,6 +96,7 @@ if (!defined('DONOTLOADCONF') == true && file_exists($conffile) && filesize($con
 		$dolibarr_main_data_root = isset($dolibarr_main_data_root) ?trim($dolibarr_main_data_root) : DOL_DOCUMENT_ROOT.'/../documents';
 		$dolibarr_main_url_root         = isset($dolibarr_main_url_root) ?trim($dolibarr_main_url_root) : '';
 		$dolibarr_main_url_root_alt     = isset($dolibarr_main_url_root_alt) ?trim($dolibarr_main_url_root_alt) : '';
+		error_log("main doc root creer var");
 		$dolibarr_main_document_root    = isset($dolibarr_main_document_root) ?trim($dolibarr_main_document_root) : '';
 		$dolibarr_main_document_root_alt = isset($dolibarr_main_document_root_alt) ?trim($dolibarr_main_document_root_alt) : '';
 
