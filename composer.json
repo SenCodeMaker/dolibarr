@@ -24,7 +24,7 @@
 		"vendor-dir" : "htdocs/includes"
 	},
 	"require" : {
-		"php" : "^7.4.0",
+		"php" : "^7.0.0",
 		"ext-curl" : "*",
 		"ckeditor/ckeditor" : "4.12.1",
 		"ext-gd" : "*",
